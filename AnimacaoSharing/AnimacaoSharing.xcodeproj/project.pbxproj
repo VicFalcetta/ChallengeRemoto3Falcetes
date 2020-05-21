@@ -22,6 +22,9 @@
 		E0ABE2572477304000655908 /* SearchBarMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2562477304000655908 /* SearchBarMovies.swift */; };
 		E0ABE2592477311600655908 /* TableViewMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2582477311600655908 /* TableViewMovies.swift */; };
 		E0ABE25B247731EC00655908 /* CollectionViewMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE25A247731EC00655908 /* CollectionViewMovies.swift */; };
+		E0ABE25E2477341900655908 /* SearchBarDrawings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE25D2477341900655908 /* SearchBarDrawings.swift */; };
+		E0ABE2602477344A00655908 /* TableViewDrawings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE25F2477344A00655908 /* TableViewDrawings.swift */; };
+		E0ABE2622477346A00655908 /* CollectionViewDrawings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2612477346A00655908 /* CollectionViewDrawings.swift */; };
 		E0DDF32124731B73009E9DF9 /* tw-cen-mt-6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		E0ABE2562477304000655908 /* SearchBarMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarMovies.swift; sourceTree = "<group>"; };
 		E0ABE2582477311600655908 /* TableViewMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMovies.swift; sourceTree = "<group>"; };
 		E0ABE25A247731EC00655908 /* CollectionViewMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewMovies.swift; sourceTree = "<group>"; };
+		E0ABE25D2477341900655908 /* SearchBarDrawings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarDrawings.swift; sourceTree = "<group>"; };
+		E0ABE25F2477344A00655908 /* TableViewDrawings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDrawings.swift; sourceTree = "<group>"; };
+		E0ABE2612477346A00655908 /* CollectionViewDrawings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDrawings.swift; sourceTree = "<group>"; };
 		E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tw-cen-mt-6.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +85,7 @@
 				22F3EEA3247302A100774A66 /* AppDelegate.swift */,
 				22F3EEA5247302A100774A66 /* SceneDelegate.swift */,
 				E0ABE25C247731FB00655908 /* Movies */,
-				E023F97424770B08008B4D5F /* DrawingsViewController.swift */,
+				E0ABE2632477348000655908 /* Drawings */,
 				E06BFE5E247712E000813E5B /* AddViewController.swift */,
 				E06BFE602477135800813E5B /* DetailsViewController.swift */,
 				E023F97624770B6F008B4D5F /* ProfileViewController.swift */,
@@ -103,6 +109,17 @@
 				E0ABE25A247731EC00655908 /* CollectionViewMovies.swift */,
 			);
 			path = Movies;
+			sourceTree = "<group>";
+		};
+		E0ABE2632477348000655908 /* Drawings */ = {
+			isa = PBXGroup;
+			children = (
+				E023F97424770B08008B4D5F /* DrawingsViewController.swift */,
+				E0ABE25D2477341900655908 /* SearchBarDrawings.swift */,
+				E0ABE25F2477344A00655908 /* TableViewDrawings.swift */,
+				E0ABE2612477346A00655908 /* CollectionViewDrawings.swift */,
+			);
+			path = Drawings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,11 +218,14 @@
 				E023F97724770B6F008B4D5F /* ProfileViewController.swift in Sources */,
 				22F3EEA8247302A100774A66 /* MoviesViewController.swift in Sources */,
 				E0ABE2592477311600655908 /* TableViewMovies.swift in Sources */,
+				E0ABE25E2477341900655908 /* SearchBarDrawings.swift in Sources */,
 				E0ABE25B247731EC00655908 /* CollectionViewMovies.swift in Sources */,
 				E06BFE5F247712E000813E5B /* AddViewController.swift in Sources */,
+				E0ABE2602477344A00655908 /* TableViewDrawings.swift in Sources */,
 				E06BFE612477135800813E5B /* DetailsViewController.swift in Sources */,
 				22F3EEAE247302A100774A66 /* AnimacaoSharing.xcdatamodeld in Sources */,
 				E06BFE63247713C600813E5B /* CompanyViewController.swift in Sources */,
+				E0ABE2622477346A00655908 /* CollectionViewDrawings.swift in Sources */,
 				22F3EEA4247302A100774A66 /* AppDelegate.swift in Sources */,
 				E023F97524770B08008B4D5F /* DrawingsViewController.swift in Sources */,
 				E0ABE2572477304000655908 /* SearchBarMovies.swift in Sources */,

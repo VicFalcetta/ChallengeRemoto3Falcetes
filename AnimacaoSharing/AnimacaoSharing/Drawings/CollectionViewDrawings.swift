@@ -1,5 +1,5 @@
 //
-//  CollectionViewMovies.swift
+//  CollectionViewDrawings.swift
 //  AnimacaoSharing
 //
 //  Created by Rayane Xavier on 21/05/20.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-extension MoviesViewController: UICollectionViewDelegate {
+extension DrawingsViewController: UICollectionViewDelegate {
     
 }
 
-extension MoviesViewController: UICollectionViewDataSource {
+extension DrawingsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //        
+        //
     }
 }

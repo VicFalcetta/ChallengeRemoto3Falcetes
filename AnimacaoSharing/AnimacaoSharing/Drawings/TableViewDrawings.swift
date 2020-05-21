@@ -1,5 +1,5 @@
 //
-//  SearchBarMovies.swift
+//  TableViewDrawings.swift
 //  AnimacaoSharing
 //
 //  Created by Rayane Xavier on 21/05/20.
@@ -7,18 +7,16 @@
 //
 
 import UIKit
-
-extension MoviesViewController: UITableViewDelegate {
-
-}
-
-extension MoviesViewController: UITableViewDataSource {
+ 
+extension DrawingsViewController: UITableViewDelegate {
     
+}
+extension DrawingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//
+//        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//       
+//
     }
 }
