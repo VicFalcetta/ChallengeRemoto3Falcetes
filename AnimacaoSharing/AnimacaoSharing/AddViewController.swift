@@ -9,6 +9,16 @@
 import UIKit
 
 class AddViewController: UIViewController {
+ 
+    @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
+    }
+    
+    @IBAction func cancelAnimationBarButtonItem(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var addAnimationSearchBar: UISearchBar!
+    @IBOutlet weak var posterAnimationImagemView: UIImageView!
+    @IBOutlet weak var descriptionAnimationLabel: UILabel!
 
     override func viewDidLoad() {
     super.viewDidLoad()

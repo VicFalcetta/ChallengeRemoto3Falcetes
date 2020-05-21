@@ -379,7 +379,11 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                                 <items>
                                                     <navigationItem title="Detalhes" id="pcu-85-s15">
-                                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="sYJ-Iy-15u"/>
+                                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="sYJ-Iy-15u">
+                                                            <connections>
+                                                                <action selector="shereAnimationUIButtonItem:" destination="AOm-xO-1q0" id="AzQ-Ug-kwb"/>
+                                                            </connections>
+                                                        </barButtonItem>
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
@@ -527,6 +531,14 @@
                         <viewLayoutGuide key="safeArea" id="L8i-jp-jsb"/>
                     </view>
                     <size key="freeformSize" width="414" height="527"/>
+                    <connections>
+                        <outlet property="descriptionAnimationDetailsLabel" destination="NHJ-IG-CF1" id="keB-B3-NGx"/>
+                        <outlet property="genreAnimationDetailsCollectionView" destination="WrL-mP-4rk" id="R6l-mc-bTh"/>
+                        <outlet property="launchAnimationDetailsLabel" destination="DKt-Mu-ynj" id="fbM-Ig-rD5"/>
+                        <outlet property="nameAnimationDetailsLabel" destination="FGj-NN-F7p" id="buT-7A-hyT"/>
+                        <outlet property="posterAnimationDetailsImageView" destination="br5-Vh-eFS" id="RY0-Cp-oaL"/>
+                        <outlet property="producerAnimationDetailsLabel" destination="WpD-fI-Gwa" id="vfd-gb-ZqF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqu-c0-few" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -786,8 +798,16 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                                 <items>
                                                     <navigationItem title="Adicionar" id="i5F-ZV-SWZ">
-                                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IPZ-Gv-kLK"/>
-                                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HV5-N6-CJ1"/>
+                                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IPZ-Gv-kLK">
+                                                            <connections>
+                                                                <action selector="cancelAnimationBarButtonItem:" destination="kgJ-5g-9up" id="NkM-I9-IRU"/>
+                                                            </connections>
+                                                        </barButtonItem>
+                                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HV5-N6-CJ1">
+                                                            <connections>
+                                                                <action selector="saveAnimationBarButtonIten:" destination="kgJ-5g-9up" id="n30-TU-SvD"/>
+                                                            </connections>
+                                                        </barButtonItem>
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
@@ -875,6 +895,11 @@
                         <viewLayoutGuide key="safeArea" id="nmn-NU-7yI"/>
                     </view>
                     <size key="freeformSize" width="414" height="472"/>
+                    <connections>
+                        <outlet property="addAnimationSearchBar" destination="Hbo-oL-Jjg" id="TSC-xe-WfF"/>
+                        <outlet property="descriptionAnimationLabel" destination="xzZ-y5-0ak" id="PsT-in-SfR"/>
+                        <outlet property="posterAnimationImagemView" destination="FR8-1G-bKD" id="3y8-E8-rPb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lV-rl-fXg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1327,6 +1352,14 @@
                         <viewLayoutGuide key="safeArea" id="3ja-y5-gXP"/>
                     </view>
                     <size key="freeformSize" width="414" height="791"/>
+                    <connections>
+                        <outlet property="awardsCompanyCollectionView" destination="2Hx-OG-T8a" id="pzO-iO-vXC"/>
+                        <outlet property="companyWatchedMoviesCollectionView" destination="iok-H3-SPS" id="9rp-aT-bwI"/>
+                        <outlet property="countryCompanyLabel" destination="eXD-OU-JZf" id="dak-AD-dwC"/>
+                        <outlet property="foundationCompanyLabel" destination="fm1-De-Hoy" id="rwH-jd-8GF"/>
+                        <outlet property="logoCompanyImagemView" destination="eTz-TF-7Ti" id="b6k-6v-0Wf"/>
+                        <outlet property="nameCompanyLabel" destination="npM-EQ-NJU" id="wyn-Qv-YVL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6k-YQ-q5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

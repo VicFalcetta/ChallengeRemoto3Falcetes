@@ -10,6 +10,16 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBAction func shereAnimationUIButtonItem(_ sender: Any) {
+    }
+
+    @IBOutlet weak var posterAnimationDetailsImageView: UIImageView!
+    @IBOutlet weak var nameAnimationDetailsLabel: UILabel!
+    @IBOutlet weak var producerAnimationDetailsLabel: UILabel!
+    @IBOutlet weak var launchAnimationDetailsLabel: UILabel!
+    @IBOutlet weak var genreAnimationDetailsCollectionView: UICollectionView!
+    @IBOutlet weak var descriptionAnimationDetailsLabel: UILabel!
+
     override func viewDidLoad() {
     super.viewDidLoad()
         // Do any additional setup after loading the view.
