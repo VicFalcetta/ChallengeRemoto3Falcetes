@@ -364,7 +364,7 @@
         <!--Detalhes-->
         <scene sceneID="sF5-DU-c60">
             <objects>
-                <viewController title="Detalhes" id="AOm-xO-1q0" sceneMemberID="viewController">
+                <viewController title="Detalhes" id="AOm-xO-1q0" customClass="DetailsViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FMC-6X-JUt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="473"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -771,7 +771,7 @@
         <!--Adicionar-->
         <scene sceneID="HrE-Kz-j5e">
             <objects>
-                <viewController title="Adicionar" id="kgJ-5g-9up" sceneMemberID="viewController">
+                <viewController title="Adicionar" id="kgJ-5g-9up" customClass="AddViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WFd-Mg-OWr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="472"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1067,7 +1067,7 @@
                     </navigationItem>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
-                        <outlet property="BestDrawingsCollectionView" destination="LGv-UU-Ojg" id="EAm-7m-46i"/>
+                        <outlet property="bestDrawingsCollectionView" destination="LGv-UU-Ojg" id="EAm-7m-46i"/>
                         <outlet property="drawingSearchBar" destination="nzG-dv-veU" id="vaH-eb-Vci"/>
                         <outlet property="galleryDrawingTableView" destination="ecZ-8w-Zk7" id="2Ec-Ps-0zA"/>
                     </connections>
@@ -1098,7 +1098,7 @@
         <!--Detalhes-->
         <scene sceneID="x0s-rK-wMg">
             <objects>
-                <viewController title="Detalhes" id="1Na-fQ-KCj" sceneMemberID="viewController">
+                <viewController title="Detalhes" id="1Na-fQ-KCj" customClass="CompanyViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vRY-uc-hU1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="737"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

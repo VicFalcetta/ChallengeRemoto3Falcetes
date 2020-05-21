@@ -1,5 +1,5 @@
 //
-//  DrawingsViewController.swift
+//  CompanyViewController.swift
 //  AnimacaoSharing
 //
 //  Created by Rayane Xavier on 21/05/20.
@@ -8,11 +8,7 @@
 
 import UIKit
 
-class DrawingsViewController: UIViewController {
-
-    @IBOutlet weak var drawingSearchBar: UISearchBar!
-    @IBOutlet weak var bestDrawingsCollectionView: UICollectionView!
-    @IBOutlet weak var galleryDrawingTableView: UITableView!
+class CompanyViewController: UIViewController {
 
     override func viewDidLoad() {
     super.viewDidLoad()
