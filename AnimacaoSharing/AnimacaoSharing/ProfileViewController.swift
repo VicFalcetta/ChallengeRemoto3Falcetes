@@ -9,6 +9,31 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+   
+    @IBOutlet weak var photographProfileImageView: UIImageView!
+    
+    @IBOutlet weak var nameProfileLabel: UILabel!
+    
+    @IBOutlet weak var totalMoviesProfileLabel: UILabel!
+    
+    @IBOutlet weak var totalDrawingProfileLabel: UILabel!
+    
+    @IBOutlet weak var firstFavoriteCategoryProfileImageView: UIImageView!
+    
+    @IBOutlet weak var secondFavoriteCategoryProfileImageView: UIImageView!
+    
+    @IBOutlet weak var thirdFavoriteCategoryProfileImageView: UIImageView!
+    
+    @IBOutlet weak var firstFavoriteCategoryProfileLabel: UILabel!
+    
+    @IBOutlet weak var secondFavoriteCategoryProfileLabel: UILabel!
+    
+    @IBOutlet weak var thirdFavoriteCategoryProfileLabel: UILabel!
+    
+    @IBOutlet weak var watchedMoviesCollectionView: UICollectionView!
+    
+    @IBOutlet weak var watchedDrawingCollectionView: UICollectionView!
+    
     
         override func viewDidLoad() {
         super.viewDidLoad()

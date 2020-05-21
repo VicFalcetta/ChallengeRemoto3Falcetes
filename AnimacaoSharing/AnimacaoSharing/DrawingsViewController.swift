@@ -9,9 +9,16 @@
 import UIKit
 
 class DrawingsViewController: UIViewController {
+ 
+    
+    @IBOutlet weak var drawingSearchBar: UISearchBar!
+    
+    @IBOutlet weak var BestDrawingsCollectionView: UICollectionView!
+    
+    @IBOutlet weak var galleryDrawingTableView: UITableView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 }
