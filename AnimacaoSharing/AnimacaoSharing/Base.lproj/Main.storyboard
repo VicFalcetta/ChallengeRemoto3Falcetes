@@ -36,7 +36,7 @@
         <!--Perfil-->
         <scene sceneID="rZr-1W-fWv">
             <objects>
-                <viewController id="ZPY-hu-Xah" sceneMemberID="viewController">
+                <viewController id="ZPY-hu-Xah" customClass="ProfileViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z7p-9v-F8d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -564,7 +564,7 @@
         <!--Filmes-->
         <scene sceneID="ExB-HO-hXz">
             <objects>
-                <viewController id="sgr-4L-4cN" sceneMemberID="viewController">
+                <viewController id="sgr-4L-4cN" customClass="MoviesViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mQp-Af-ePz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -867,7 +867,7 @@
         <!--Desenhos-->
         <scene sceneID="Ldq-J3-j0V">
             <objects>
-                <viewController id="Mxw-rT-f2Q" sceneMemberID="viewController">
+                <viewController id="Mxw-rT-f2Q" customClass="DrawingsViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="luP-eo-SP2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1314,8 +1314,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Ggn-k5-kTq"/>
-        <segue reference="qgi-V9-mC3"/>
-        <segue reference="w7L-eT-sER"/>
+        <segue reference="62y-Ak-E47"/>
+        <segue reference="MZK-6d-ftZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.078431372549019607" green="1" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
 </document>
