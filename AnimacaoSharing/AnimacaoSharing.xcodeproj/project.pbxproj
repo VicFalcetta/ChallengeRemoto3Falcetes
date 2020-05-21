@@ -19,6 +19,9 @@
 		E06BFE5F247712E000813E5B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BFE5E247712E000813E5B /* AddViewController.swift */; };
 		E06BFE612477135800813E5B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BFE602477135800813E5B /* DetailsViewController.swift */; };
 		E06BFE63247713C600813E5B /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BFE62247713C600813E5B /* CompanyViewController.swift */; };
+		E0ABE2572477304000655908 /* SearchBarMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2562477304000655908 /* SearchBarMovies.swift */; };
+		E0ABE2592477311600655908 /* TableViewMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2582477311600655908 /* TableViewMovies.swift */; };
+		E0ABE25B247731EC00655908 /* CollectionViewMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE25A247731EC00655908 /* CollectionViewMovies.swift */; };
 		E0DDF32124731B73009E9DF9 /* tw-cen-mt-6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		E06BFE5E247712E000813E5B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		E06BFE602477135800813E5B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E06BFE62247713C600813E5B /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		E0ABE2562477304000655908 /* SearchBarMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarMovies.swift; sourceTree = "<group>"; };
+		E0ABE2582477311600655908 /* TableViewMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMovies.swift; sourceTree = "<group>"; };
+		E0ABE25A247731EC00655908 /* CollectionViewMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewMovies.swift; sourceTree = "<group>"; };
 		E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tw-cen-mt-6.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +78,7 @@
 			children = (
 				22F3EEA3247302A100774A66 /* AppDelegate.swift */,
 				22F3EEA5247302A100774A66 /* SceneDelegate.swift */,
-				22F3EEA7247302A100774A66 /* MoviesViewController.swift */,
+				E0ABE25C247731FB00655908 /* Movies */,
 				E023F97424770B08008B4D5F /* DrawingsViewController.swift */,
 				E06BFE5E247712E000813E5B /* AddViewController.swift */,
 				E06BFE602477135800813E5B /* DetailsViewController.swift */,
@@ -86,6 +92,17 @@
 				E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */,
 			);
 			path = AnimacaoSharing;
+			sourceTree = "<group>";
+		};
+		E0ABE25C247731FB00655908 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				22F3EEA7247302A100774A66 /* MoviesViewController.swift */,
+				E0ABE2562477304000655908 /* SearchBarMovies.swift */,
+				E0ABE2582477311600655908 /* TableViewMovies.swift */,
+				E0ABE25A247731EC00655908 /* CollectionViewMovies.swift */,
+			);
+			path = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +200,15 @@
 			files = (
 				E023F97724770B6F008B4D5F /* ProfileViewController.swift in Sources */,
 				22F3EEA8247302A100774A66 /* MoviesViewController.swift in Sources */,
+				E0ABE2592477311600655908 /* TableViewMovies.swift in Sources */,
+				E0ABE25B247731EC00655908 /* CollectionViewMovies.swift in Sources */,
 				E06BFE5F247712E000813E5B /* AddViewController.swift in Sources */,
 				E06BFE612477135800813E5B /* DetailsViewController.swift in Sources */,
 				22F3EEAE247302A100774A66 /* AnimacaoSharing.xcdatamodeld in Sources */,
 				E06BFE63247713C600813E5B /* CompanyViewController.swift in Sources */,
 				22F3EEA4247302A100774A66 /* AppDelegate.swift in Sources */,
 				E023F97524770B08008B4D5F /* DrawingsViewController.swift in Sources */,
+				E0ABE2572477304000655908 /* SearchBarMovies.swift in Sources */,
 				22F3EEA6247302A100774A66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
