@@ -160,7 +160,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedMoviesCollectionCell" id="6UU-fY-mrQ">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedMoviesCollectionCell" id="6UU-fY-mrQ" customClass="WatchedMoviesCollectionViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="181"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kif-dI-rnQ">
@@ -200,6 +200,9 @@
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="125" height="181"/>
                                                         <connections>
+                                                            <outlet property="posterWatchMovieImageView" destination="qdc-h9-x24" id="CgI-y8-yBa"/>
+                                                            <outlet property="subtitleWatchMovieLabel" destination="VLb-jB-1Gc" id="j33-3v-Xo0"/>
+                                                            <outlet property="titleWatchMovieLabel" destination="ME8-Oq-3sf" id="rVg-W6-FAl"/>
                                                             <segue destination="1Na-fQ-KCj" kind="showDetail" id="Ggn-k5-kTq"/>
                                                         </connections>
                                                     </collectionViewCell>
@@ -224,7 +227,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedDrawingsCollectionCell" id="CPO-Ik-cds">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedDrawingsCollectionCell" id="CPO-Ik-cds" customClass="WatchedDrawingCollectionViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="181"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dD6-QX-jqz">
@@ -264,6 +267,9 @@
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="125" height="181"/>
                                                         <connections>
+                                                            <outlet property="posterWatchDrawingImageView" destination="fcj-UY-19h" id="t5G-Dk-umb"/>
+                                                            <outlet property="subtitleWatchDrawingLabel" destination="98Z-8C-7By" id="I7I-y7-7nt"/>
+                                                            <outlet property="titleWatchDrawingLabel" destination="Ihn-7e-vXA" id="x6B-oj-zUz"/>
                                                             <segue destination="1Na-fQ-KCj" kind="showDetail" id="0Lp-ww-VFs"/>
                                                         </connections>
                                                     </collectionViewCell>

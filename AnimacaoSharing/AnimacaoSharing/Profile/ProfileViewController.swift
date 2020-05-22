@@ -26,6 +26,9 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var watchedMoviesCollectionView: UICollectionView!
     @IBOutlet weak var watchedDrawingCollectionView: UICollectionView!
 
+    var arrayOfWatchedMovies = ["Um","Dois","Tres","Quatro","Cinco"]
+    var arrayOfWatchedDrawing = ["Um","Dois","Tres","Quatro","Cinco"]
+    
         override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
