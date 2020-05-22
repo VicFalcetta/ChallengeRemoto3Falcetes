@@ -13,7 +13,8 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var moviesSearchBar: UISearchBar!
     @IBOutlet weak var bestMoviesCollectionView: UICollectionView!
     @IBOutlet weak var galleryMoviesTableView: UITableView!
-
+    
+    var movies = [Movie]()
     var arrayOfBestMovies = ["Um","Dois","Tres","Quatro","Cinco"]
     
     override func viewDidLoad() {
@@ -21,4 +22,5 @@ class MoviesViewController: UIViewController {
         bestMoviesCollectionView.delegate = self
         bestMoviesCollectionView.dataSource = self
     }
+    
 }

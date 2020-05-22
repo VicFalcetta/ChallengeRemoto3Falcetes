@@ -8,15 +8,15 @@
 
 import UIKit
  
-extension DrawingsViewController: UITableViewDelegate {
-    
-}
-extension DrawingsViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//
-    }
-}
+//extension DrawingsViewController: UITableViewDelegate {
+//    
+//}
+//extension DrawingsViewController: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+////        
+//    }
+//    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+////
+//    }
+//}
