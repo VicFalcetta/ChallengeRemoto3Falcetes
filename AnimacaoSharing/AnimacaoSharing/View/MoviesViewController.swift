@@ -16,6 +16,7 @@ class MoviesViewController: UIViewController {
 
     var movies = [Movie]()
     var arrayOfBestMovies = ["Um","Dois","Tres","Quatro","Cinco"]
+    var arrayOfGalleryMovies = ["Um","Dois","Tres","Quatro","Cinco"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
