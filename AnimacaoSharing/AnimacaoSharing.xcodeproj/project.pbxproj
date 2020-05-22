@@ -33,6 +33,7 @@
 		E0DDF32124731B73009E9DF9 /* tw-cen-mt-6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */; };
 		E0E20984247768FB00E5327D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E20983247768FB00E5327D /* Animation.swift */; };
 		E0E2098824776B3800E5327D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2098724776B3800E5327D /* Company.swift */; };
+		E0E2098A24776C7000E5327D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2098924776C7000E5327D /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tw-cen-mt-6.ttf"; sourceTree = "<group>"; };
 		E0E20983247768FB00E5327D /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		E0E2098724776B3800E5327D /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		E0E2098924776C7000E5327D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				E0E20983247768FB00E5327D /* Animation.swift */,
 				E0E2098724776B3800E5327D /* Company.swift */,
+				E0E2098924776C7000E5327D /* Person.swift */,
 				E0ABE25C247731FB00655908 /* Movies */,
 				E0ABE2632477348000655908 /* Drawings */,
 				E0ABE2642477382F00655908 /* Profile */,
@@ -253,6 +256,7 @@
 				E0ABE2602477344A00655908 /* TableViewDrawings.swift in Sources */,
 				E0E2098824776B3800E5327D /* Company.swift in Sources */,
 				E06BFE612477135800813E5B /* DetailsViewController.swift in Sources */,
+				E0E2098A24776C7000E5327D /* Person.swift in Sources */,
 				22F3EEAE247302A100774A66 /* AnimacaoSharing.xcdatamodeld in Sources */,
 				E0C1AECD2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift in Sources */,
 				E06BFE63247713C600813E5B /* CompanyViewController.swift in Sources */,
