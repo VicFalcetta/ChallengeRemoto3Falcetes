@@ -945,7 +945,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="collectionCellFilmesMAImagem" id="aJq-BP-o1w">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="BestDrawingsCollectionCell" id="aJq-BP-o1w" customClass="BestDrawingsCollectionViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="181"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lqh-X1-0Uf">
@@ -985,6 +985,9 @@
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="125" height="181"/>
                                                         <connections>
+                                                            <outlet property="posterDrawingImagemView" destination="wzQ-1v-wJx" id="4wO-Et-DgH"/>
+                                                            <outlet property="subtitleDrawingLabel" destination="0dK-JR-qad" id="otl-XT-BFy"/>
+                                                            <outlet property="titleDrawingLabel" destination="vpk-Lf-co9" id="ZPJ-yK-L0z"/>
                                                             <segue destination="AOm-xO-1q0" kind="showDetail" id="MZK-6d-ftZ"/>
                                                         </connections>
                                                     </collectionViewCell>
@@ -1371,8 +1374,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Ggn-k5-kTq"/>
-        <segue reference="qgi-V9-mC3"/>
-        <segue reference="w7L-eT-sER"/>
+        <segue reference="62y-Ak-E47"/>
+        <segue reference="MZK-6d-ftZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.078431372549019607" green="1" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
 </document>

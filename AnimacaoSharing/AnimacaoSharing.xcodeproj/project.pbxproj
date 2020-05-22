@@ -27,6 +27,7 @@
 		E0ABE2622477346A00655908 /* CollectionViewDrawings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2612477346A00655908 /* CollectionViewDrawings.swift */; };
 		E0ABE2662477386F00655908 /* CollectionViewProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2652477386F00655908 /* CollectionViewProfile.swift */; };
 		E0C1AECB24774F6100B582E6 /* BestMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C1AECA24774F6100B582E6 /* BestMoviesCollectionViewCell.swift */; };
+		E0C1AECD2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C1AECC2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift */; };
 		E0DDF32124731B73009E9DF9 /* tw-cen-mt-6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		E0ABE2612477346A00655908 /* CollectionViewDrawings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDrawings.swift; sourceTree = "<group>"; };
 		E0ABE2652477386F00655908 /* CollectionViewProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewProfile.swift; sourceTree = "<group>"; };
 		E0C1AECA24774F6100B582E6 /* BestMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0C1AECC2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestDrawingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tw-cen-mt-6.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				E0ABE25D2477341900655908 /* SearchBarDrawings.swift */,
 				E0ABE25F2477344A00655908 /* TableViewDrawings.swift */,
 				E0ABE2612477346A00655908 /* CollectionViewDrawings.swift */,
+				E0C1AECC2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift */,
 			);
 			path = Drawings;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				E0ABE2602477344A00655908 /* TableViewDrawings.swift in Sources */,
 				E06BFE612477135800813E5B /* DetailsViewController.swift in Sources */,
 				22F3EEAE247302A100774A66 /* AnimacaoSharing.xcdatamodeld in Sources */,
+				E0C1AECD2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift in Sources */,
 				E06BFE63247713C600813E5B /* CompanyViewController.swift in Sources */,
 				E0ABE2622477346A00655908 /* CollectionViewDrawings.swift in Sources */,
 				E0C1AECB24774F6100B582E6 /* BestMoviesCollectionViewCell.swift in Sources */,
