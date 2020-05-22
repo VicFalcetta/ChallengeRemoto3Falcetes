@@ -31,6 +31,7 @@
 		E0C1AECB24774F6100B582E6 /* BestMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C1AECA24774F6100B582E6 /* BestMoviesCollectionViewCell.swift */; };
 		E0C1AECD2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C1AECC2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift */; };
 		E0DDF32124731B73009E9DF9 /* tw-cen-mt-6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */; };
+		E0E20984247768FB00E5327D /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E20983247768FB00E5327D /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		E0C1AECA24774F6100B582E6 /* BestMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0C1AECC2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestDrawingsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0DDF32024731B72009E9DF9 /* tw-cen-mt-6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tw-cen-mt-6.ttf"; sourceTree = "<group>"; };
+		E0E20983247768FB00E5327D /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,7 @@
 		22F3EEA2247302A100774A66 /* AnimacaoSharing */ = {
 			isa = PBXGroup;
 			children = (
-				22F3EEA3247302A100774A66 /* AppDelegate.swift */,
-				22F3EEA5247302A100774A66 /* SceneDelegate.swift */,
+				E0E20983247768FB00E5327D /* Animation.swift */,
 				E0ABE25C247731FB00655908 /* Movies */,
 				E0ABE2632477348000655908 /* Drawings */,
 				E0ABE2642477382F00655908 /* Profile */,
@@ -102,6 +103,8 @@
 				E06BFE62247713C600813E5B /* CompanyViewController.swift */,
 				22F3EEA9247302A100774A66 /* Main.storyboard */,
 				22F3EEAF247302A400774A66 /* Assets.xcassets */,
+				22F3EEA3247302A100774A66 /* AppDelegate.swift */,
+				22F3EEA5247302A100774A66 /* SceneDelegate.swift */,
 				22F3EEB1247302A400774A66 /* LaunchScreen.storyboard */,
 				22F3EEB4247302A400774A66 /* Info.plist */,
 				22F3EEAC247302A100774A66 /* AnimacaoSharing.xcdatamodeld */,
@@ -257,6 +260,7 @@
 				E0ABE2572477304000655908 /* SearchBarMovies.swift in Sources */,
 				E055BE25247757EA00E7F6B0 /* WatchedMoviesCollectionViewCell.swift in Sources */,
 				E0ABE2662477386F00655908 /* CollectionViewProfile.swift in Sources */,
+				E0E20984247768FB00E5327D /* Animation.swift in Sources */,
 				22F3EEA6247302A100774A66 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
