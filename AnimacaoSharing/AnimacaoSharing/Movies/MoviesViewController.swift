@@ -14,8 +14,11 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var bestMoviesCollectionView: UICollectionView!
     @IBOutlet weak var galleryMoviesTableView: UITableView!
 
+    var arrayOfBestMovies = ["Um","Dois","Tres","Quatro","Cinco"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        bestMoviesCollectionView.delegate = self
+        bestMoviesCollectionView.dataSource = self
     }
 }
