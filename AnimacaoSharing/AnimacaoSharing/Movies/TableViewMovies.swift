@@ -8,17 +8,17 @@
 
 import UIKit
 
-//extension MoviesViewController: UITableViewDelegate {
+extension MoviesViewController: UITableViewDelegate {
+
+}
+
+extension MoviesViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //
-//}
-//
-//extension MoviesViewController: UITableViewDataSource {
-//    
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-////
-//    }
-//    
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-////       
-//    }
-//}
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//       
+    }
+}

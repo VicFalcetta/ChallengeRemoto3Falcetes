@@ -9,18 +9,24 @@
 import Foundation
 
 struct Movie: Codable {
-    let imdbID, title, year, poster: String
-    let type: TypeEnum
-    
-    enum CodingKeys: String, CodingKey {
-        case imdbID
-        case title = "Title"
-        case year = "Year"
-        case type = "Type"
-        case poster = "Poster"
-    }
-}
+    let imdbID,
+        title,
+        rated,
+        released,
+        director,
+        plot,
+        year,
+        imdbRating,
+        poster: String
 
-enum TypeEnum: String, Codable {
-    case movie = "movie"
+    enum CodingKeys: String, CodingKey {
+        case title = "Title"
+        case rated  = "Rated"
+        case year = "Year"
+        case plot = "Plot"
+        case released = "Released"
+        case director = "Director"
+        case poster = "Poster"
+        case imdbRating, imdbID
+    }
 }

@@ -22,5 +22,4 @@ class MoviesViewController: UIViewController {
         bestMoviesCollectionView.delegate = self
         bestMoviesCollectionView.dataSource = self
     }
-    
 }
