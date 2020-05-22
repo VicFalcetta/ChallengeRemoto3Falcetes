@@ -9,7 +9,7 @@
 import UIKit
 
 extension MoviesViewController: UISearchBarDelegate {
-    
+
 }
 
 extension MoviesViewController: UISearchControllerDelegate {
