@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController {
 
     var arrayOfWatchedMovies = ["Um","Dois","Tres","Quatro","Cinco"]
     var arrayOfWatchedDrawing = ["Um","Dois","Tres","Quatro","Cinco"]
-    
+
         override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

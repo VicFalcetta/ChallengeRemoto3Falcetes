@@ -9,10 +9,10 @@
 import UIKit
 
 class BestDrawingsCollectionViewCell: UICollectionViewCell {
-    
+
     @IBOutlet weak var posterDrawingImagemView: UIImageView!
-    
+
     @IBOutlet weak var titleDrawingLabel: UILabel!
-    
+
     @IBOutlet weak var subtitleDrawingLabel: UILabel!
 }

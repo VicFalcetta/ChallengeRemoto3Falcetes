@@ -13,5 +13,5 @@ extension MoviesViewController: UISearchBarDelegate {
 }
 
 extension MoviesViewController: UISearchControllerDelegate {
-    
+
 }

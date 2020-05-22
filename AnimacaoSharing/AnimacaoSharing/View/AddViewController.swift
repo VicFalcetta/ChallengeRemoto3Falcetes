@@ -9,27 +9,27 @@
 import UIKit
 
 class AddViewController: UIViewController {
-    
+
     @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
     }
     @IBAction func cancelAnimationBarButtonItem(_ sender: Any) {
     }
-    
+
     @IBOutlet weak var addAnimationSearchBar: UISearchBar!
     @IBOutlet weak var posterAnimationImagemView: UIImageView!
     @IBOutlet weak var descriptionAnimationLabel: UILabel!
-   
+
     var movie: Movie?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         addAnimationSearchBar.delegate = self
     }
-    
+
     func formatToQueryString(_ string: String) -> String {
         return string.components(separatedBy: " ").joined(separator: "%20")
     }
-    
+
     func searchAnimation(named name: String) {
         let queryStr = formatToQueryString(name)
         let fullURL = "https://www.omdbapi.com/?apikey=\(APIKEY)&t=\(queryStr)"
@@ -44,7 +44,7 @@ class AddViewController: UIViewController {
             }
         }
     }
-    
+
     func fillAddScreen() {
         guard let movie = movie else { return }
         posterAnimationImagemView.load(imgUrl: movie.poster)

@@ -9,10 +9,10 @@
 import UIKit
 
 class WatchedMoviesCollectionViewCell: UICollectionViewCell {
-    
+
     @IBOutlet weak var posterWatchMovieImageView: UIImageView!
-    
+
     @IBOutlet weak var titleWatchMovieLabel: UILabel!
-    
+
     @IBOutlet weak var subtitleWatchMovieLabel: UILabel!
 }

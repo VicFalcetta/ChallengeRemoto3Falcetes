@@ -9,10 +9,10 @@
 import UIKit
 
 class WatchedDrawingCollectionViewCell: UICollectionViewCell {
-    
+
     @IBOutlet weak var posterWatchDrawingImageView: UIImageView!
-    
+
     @IBOutlet weak var titleWatchDrawingLabel: UILabel!
-    
+
     @IBOutlet weak var subtitleWatchDrawingLabel: UILabel!
 }

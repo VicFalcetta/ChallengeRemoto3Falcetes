@@ -15,7 +15,7 @@ class DrawingsViewController: UIViewController {
     @IBOutlet weak var galleryDrawingTableView: UITableView!
 
     var arrayOfDrawingsMovies = ["Um","Dois","Tres","Quatro","Cinco"]
-    
+
     override func viewDidLoad() {
     super.viewDidLoad()
         // Do any additional setup after loading the view.
