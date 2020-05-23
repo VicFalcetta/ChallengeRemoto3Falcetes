@@ -9,11 +9,10 @@
 import UIKit
 
 class GaleryMovieTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var posterMovieImageView: UIImageView!
 
     @IBOutlet weak var nameMovieLabel: UILabel!
 
     @IBOutlet weak var noteMovieLabel: UILabel!
 }
-
