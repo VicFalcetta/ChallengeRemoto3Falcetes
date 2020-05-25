@@ -7,17 +7,36 @@
 //
 
 import UIKit
+import CloudKit
 
 class AddViewController: UIViewController {
 
+    let container = CKContainer.init(identifier: "iCloud.ChallengeFalcetes")
+    lazy var dataBase = container.privateCloudDatabase
+
     @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
+
+        let animation = CKRecord(recordType: "Animation")
+
+        animation.setValue(addAnimationSearchBar.text, forKey: "Name")
+        animation.setValue(noteAnimationTextField.text, forKey: "Note")
+
+        dataBase.save(animation) { (record, error) in
+            if let erro = error {
+                fatalError(erro.localizedDescription)
+            } else {
+                let nome = record?.value(forKey: "Name")
+            }
+        }
     }
+
     @IBAction func cancelAnimationBarButtonItem(_ sender: Any) {
     }
 
     @IBOutlet weak var addAnimationSearchBar: UISearchBar!
     @IBOutlet weak var posterAnimationImagemView: UIImageView!
     @IBOutlet weak var descriptionAnimationLabel: UILabel!
+    @IBOutlet weak var noteAnimationTextField: UITextField!
 
     var movie: Movie?
 
