@@ -547,6 +547,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L8i-jp-jsb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Srx-QU-Wqh"/>
                     <size key="freeformSize" width="414" height="527"/>
                     <connections>
                         <outlet property="descriptionAnimationDetailsLabel" destination="NHJ-IG-CF1" id="keB-B3-NGx"/>
@@ -1339,6 +1340,9 @@
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="125" height="181"/>
+                                                        <connections>
+                                                            <segue destination="AOm-xO-1q0" kind="show" id="vU1-JV-HbQ"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
@@ -1416,7 +1420,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="0Lp-ww-VFs"/>
         <segue reference="qgi-V9-mC3"/>
-        <segue reference="w7L-eT-sER"/>
+        <segue reference="vU1-JV-HbQ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.078431372549019607" green="1" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
