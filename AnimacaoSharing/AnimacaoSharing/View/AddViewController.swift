@@ -13,24 +13,37 @@ class AddViewController: UIViewController {
 
     let container = CKContainer.init(identifier: "iCloud.ChallengeFalcetes")
     lazy var dataBase = container.privateCloudDatabase
+    weak var addMovieVCDelegate: MoviesVCDelegate?
+    weak var addDrawingVCDelegate: DrawingsVCDelegate?
+    var isMovie: Bool = false
 
     @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
 
-        let animation = CKRecord(recordType: "Animation")
-
-        animation.setValue(addAnimationSearchBar.text, forKey: "Name")
-        animation.setValue(noteAnimationTextField.text, forKey: "Note")
-
-        dataBase.save(animation) { (record, error) in
-            if let erro = error {
-                fatalError(erro.localizedDescription)
-            } else {
-                let nome = record?.value(forKey: "Name")
-            }
+//        let animation = CKRecord(recordType: "Animation")
+//
+//        animation.setValue(addAnimationSearchBar.text, forKey: "Name")
+//        animation.setValue(noteAnimationTextField.text, forKey: "Note")
+//
+//        dataBase.save(animation) { (record, error) in
+//            if let erro = error {
+//                fatalError(erro.localizedDescription)
+//            } else {
+//                let nome = record?.value(forKey: "Name")
+//            }
+//        }
+        guard let movie = movie else { return }
+        guard let userRating = noteAnimationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
+        let newAnimation: Animation = Animation.createAnimation(movie: movie, userRating: userRating)
+        if isMovie == true {
+            addMovieVCDelegate?.addMovie(newAnimation)
+        } else {
+            addDrawingVCDelegate?.addDrawing(newAnimation)
         }
+        navigationController?.popViewController(animated: true)
     }
 
     @IBAction func cancelAnimationBarButtonItem(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
 
     @IBOutlet weak var addAnimationSearchBar: UISearchBar!
@@ -38,7 +51,7 @@ class AddViewController: UIViewController {
     @IBOutlet weak var descriptionAnimationLabel: UILabel!
     @IBOutlet weak var noteAnimationTextField: UITextField!
 
-    var movie: Movie?
+    var movie: MovieAPI?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +69,7 @@ class AddViewController: UIViewController {
         DispatchQueue.main.async {
             guard let urlRequest = URL(string: fullURL),
                 let data = try? Data(contentsOf: urlRequest) else { return }
-            if let movie = try? JSONDecoder().decode(Movie.self, from: data) {
+            if let movie = try? JSONDecoder().decode(MovieAPI.self, from: data) {
                 self.movie = movie
                 self.fillAddScreen()
             } else {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Movie: Codable {
+struct MovieAPI: Codable {
     let imdbID,
         title,
         rated,

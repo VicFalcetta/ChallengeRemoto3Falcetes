@@ -9,7 +9,7 @@
 import Foundation
 
 struct Search: Codable {
-    let movies: [Movie]
+    let movies: [MovieAPI]
     let response: String
 
     enum CodingKeys: String, CodingKey {

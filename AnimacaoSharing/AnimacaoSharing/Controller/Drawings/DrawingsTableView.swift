@@ -18,7 +18,9 @@ extension DrawingsViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GalleryDrawingsTableViewCell", for: indexPath) as! GalleryDrawingsTableViewCell
-        cell.nameDrawingsLabel.text = arrayOfGalleryDrawings[indexPath.row]
+        cell.nameDrawingsLabel.text = arrayOfGalleryDrawings[indexPath.row].title
+        cell.noteDrawingsLabel.text = "\(arrayOfGalleryDrawings[indexPath.row].userRating)/10"
+        cell.posterDrawingsImageView.load(imgUrl: arrayOfGalleryDrawings[indexPath.row].poster)
         return cell
     }
 }
