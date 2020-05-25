@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2256F464247873F90063A47A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256F463247873F90063A47A /* Extensions.swift */; };
-		22AE0512247852340015CCE0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0511247852340015CCE0 /* Movie.swift */; };
+		2256F479247C40690063A47A /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2256F478247C40690063A47A /* Animation.swift */; };
+		22AE0512247852340015CCE0 /* MovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0511247852340015CCE0 /* MovieAPI.swift */; };
 		22AE0514247856550015CCE0 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE0513247856550015CCE0 /* Search.swift */; };
 		22AE051724785ABF0015CCE0 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE051624785ABF0015CCE0 /* APIKey.swift */; };
 		22F3EEA4247302A100774A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F3EEA3247302A100774A66 /* AppDelegate.swift */; };
@@ -44,7 +45,8 @@
 
 /* Begin PBXFileReference section */
 		2256F463247873F90063A47A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		22AE0511247852340015CCE0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2256F478247C40690063A47A /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		22AE0511247852340015CCE0 /* MovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAPI.swift; sourceTree = "<group>"; };
 		22AE0513247856550015CCE0 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		22AE051624785ABF0015CCE0 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		22F3EEA0247302A100774A66 /* AnimacaoSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimacaoSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,9 +121,10 @@
 		22AE050F247851B60015CCE0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2256F478247C40690063A47A /* Animation.swift */,
 				E0E2098924776C7000E5327D /* Person.swift */,
 				E0E2098724776B3800E5327D /* Company.swift */,
-				22AE0511247852340015CCE0 /* Movie.swift */,
+				22AE0511247852340015CCE0 /* MovieAPI.swift */,
 				22AE0513247856550015CCE0 /* Search.swift */,
 				E07C6F652478988A002A7BBB /* Movies */,
 				E07C6F662478988F002A7BBB /* Drawings */,
@@ -354,12 +357,13 @@
 				E0C1AECD2477526C00B582E6 /* BestDrawingsCollectionViewCell.swift in Sources */,
 				E06BFE63247713C600813E5B /* CompanyViewController.swift in Sources */,
 				E0ABE2622477346A00655908 /* DrawingsCollectionView.swift in Sources */,
-				22AE0512247852340015CCE0 /* Movie.swift in Sources */,
+				22AE0512247852340015CCE0 /* MovieAPI.swift in Sources */,
 				E07C6F6A24789F7F002A7BBB /* GalleryDrawingsTableViewCell.swift in Sources */,
 				E055BE272477580000E7F6B0 /* WatchedDrawingCollectionViewCell.swift in Sources */,
 				E0C1AECB24774F6100B582E6 /* BestMoviesCollectionViewCell.swift in Sources */,
 				22F3EEA4247302A100774A66 /* AppDelegate.swift in Sources */,
 				E023F97524770B08008B4D5F /* DrawingsViewController.swift in Sources */,
+				2256F479247C40690063A47A /* Animation.swift in Sources */,
 				22AE051724785ABF0015CCE0 /* APIKey.swift in Sources */,
 				E0ABE2572477304000655908 /* MoviesSearchBar.swift in Sources */,
 				2256F464247873F90063A47A /* Extensions.swift in Sources */,
@@ -513,7 +517,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnimacaoSharing/AnimacaoSharing.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PUT3745C65;
+				DEVELOPMENT_TEAM = 4LXC4A87QZ;
 				INFOPLIST_FILE = AnimacaoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,7 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnimacaoSharing/AnimacaoSharing.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PUT3745C65;
+				DEVELOPMENT_TEAM = 4LXC4A87QZ;
 				INFOPLIST_FILE = AnimacaoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
