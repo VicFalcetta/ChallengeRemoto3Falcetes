@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GaleryMovieTableViewCell: UITableViewCell {
+class GalleryMovieTableViewCell: UITableViewCell {
 
     @IBOutlet weak var posterMovieImageView: UIImageView!
 

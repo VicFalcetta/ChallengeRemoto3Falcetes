@@ -14,7 +14,8 @@ class DrawingsViewController: UIViewController {
     @IBOutlet weak var bestDrawingsCollectionView: UICollectionView!
     @IBOutlet weak var galleryDrawingTableView: UITableView!
 
-    var arrayOfDrawingsMovies = ["Um","Dois","Tres","Quatro","Cinco"]
+    var arrayOfBestDrawings = ["Um","Dois","Tres","Quatro","Cinco"]
+    var arrayOfGalleryDrawings = ["Um","Dois","Tres","Quatro","Cinco"]
 
     override func viewDidLoad() {
     super.viewDidLoad()

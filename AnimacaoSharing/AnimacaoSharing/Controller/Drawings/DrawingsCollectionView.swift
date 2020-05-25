@@ -14,13 +14,13 @@ extension DrawingsViewController: UICollectionViewDelegate {
 
 extension DrawingsViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        arrayOfDrawingsMovies.count
+        arrayOfBestDrawings.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
                 "BestDrawingsCollectionCell", for: indexPath) as! BestDrawingsCollectionViewCell
-        cell.titleDrawingLabel.text = arrayOfDrawingsMovies[indexPath.row]
+        cell.titleDrawingLabel.text = arrayOfBestDrawings[indexPath.row]
         return cell
     }
 }
