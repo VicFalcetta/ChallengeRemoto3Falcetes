@@ -18,7 +18,7 @@
             <objects>
                 <navigationController id="Fxw-nE-UeX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Perfil" image="person" catalog="system" selectedImage="person" id="YxG-Z2-B6Z"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Esw-fJ-Iqz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="Esw-fJ-Iqz">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -555,7 +555,7 @@
             <objects>
                 <navigationController id="mTz-Ua-BhE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Desenhos" image="tv" catalog="system" id="7KL-Vo-Trd"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MZg-kw-P9a">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="MZg-kw-P9a">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -575,7 +575,7 @@
             <objects>
                 <navigationController id="4ti-jg-JAK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Filmes" image="movie" id="jRU-Kj-iyy"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="DMq-nQ-VHg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="DMq-nQ-VHg">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
@@ -1128,7 +1128,7 @@
         <scene sceneID="bGa-wU-uB9">
             <objects>
                 <tabBarController interfaceStyle="dark" id="apT-fP-CLy" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q2b-lZ-toz">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Q2b-lZ-toz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="selectedImageTintColor" red="0.078431372550000003" green="1" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -1396,7 +1396,7 @@
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.078431372549019607" green="1" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
-        <image name="movie" width="512" height="512"/>
+        <image name="movie" width="30" height="30"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="tv" catalog="system" width="128" height="93"/>
     </resources>

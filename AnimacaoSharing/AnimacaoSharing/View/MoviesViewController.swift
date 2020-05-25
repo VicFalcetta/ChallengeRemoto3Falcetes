@@ -22,5 +22,6 @@ class MoviesViewController: UIViewController {
         super.viewDidLoad()
         bestMoviesCollectionView.delegate = self
         bestMoviesCollectionView.dataSource = self
+        overrideUserInterfaceStyle = .dark 
     }
 }

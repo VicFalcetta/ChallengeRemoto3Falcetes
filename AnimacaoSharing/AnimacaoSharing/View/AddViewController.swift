@@ -43,6 +43,7 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addAnimationSearchBar.delegate = self
+        overrideUserInterfaceStyle = .dark 
     }
 
     func formatToQueryString(_ string: String) -> String {
