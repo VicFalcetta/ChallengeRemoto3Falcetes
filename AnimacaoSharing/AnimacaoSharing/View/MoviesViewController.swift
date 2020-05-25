@@ -30,7 +30,7 @@ class MoviesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        overrideUserInterfaceStyle = .dark 
+        overrideUserInterfaceStyle = .dark
         bestMoviesCollectionView.delegate = self
         bestMoviesCollectionView.dataSource = self
         galleryMoviesTableView.dataSource = self

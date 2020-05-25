@@ -22,6 +22,6 @@ class DetailsViewController: UIViewController {
 
     override func viewDidLoad() {
     super.viewDidLoad()
-        overrideUserInterfaceStyle = .dark 
+        overrideUserInterfaceStyle = .dark
     }
 }
