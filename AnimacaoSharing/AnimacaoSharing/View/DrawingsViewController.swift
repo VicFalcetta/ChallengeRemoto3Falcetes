@@ -28,6 +28,7 @@ class DrawingsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
         bestDrawingsCollectionView.dataSource = self
         bestDrawingsCollectionView.delegate = self
         galleryDrawingTableView.dataSource = self
