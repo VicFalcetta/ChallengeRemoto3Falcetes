@@ -17,7 +17,7 @@ extension MoviesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfGalleryMovies.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier:
             "GalleryMovieTableViewCell", for: indexPath) as? GalleryMovieTableViewCell else {
@@ -28,7 +28,7 @@ extension MoviesViewController: UITableViewDataSource {
         cell.posterMovieImageView.load(imgUrl: arrayOfGalleryMovies[indexPath.row].poster)
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailAnimationVC = storyboard?.instantiateViewController(withIdentifier: "detalheVC") as? DetailsViewController
         detailAnimationVC?.poster = arrayOfGalleryMovies[indexPath.row].poster
