@@ -23,13 +23,17 @@ extension ProfileViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == self.watchedMoviesCollectionView {
-        let cellWatchMovie = collectionView.dequeueReusableCell(withReuseIdentifier:
-                "AssistedMoviesCollectionCell", for: indexPath) as! WatchedMoviesCollectionViewCell
+        guard let cellWatchMovie = collectionView.dequeueReusableCell(withReuseIdentifier:
+                "AssistedMoviesCollectionCell", for: indexPath) as? WatchedMoviesCollectionViewCell else {
+                        fatalError("DequeueReusableCell failed while casting")
+                }
             cellWatchMovie.titleWatchMovieLabel.text = arrayOfWatchedMovies[indexPath.row]
             return cellWatchMovie
         } else {
-       let cellWatchDrawing = collectionView.dequeueReusableCell(withReuseIdentifier:
-            "AssistedMoviesCollectionCell", for: indexPath) as! WatchedDrawingCollectionViewCell
+       guard let cellWatchDrawing = collectionView.dequeueReusableCell(withReuseIdentifier:
+            "AssistedMoviesCollectionCell", for: indexPath) as? WatchedDrawingCollectionViewCell else {
+                    fatalError("DequeueReusableCell failed while casting")
+            }
         cellWatchDrawing.titleWatchDrawingLabel.text = arrayOfWatchedDrawing[indexPath.row]
          return cellWatchDrawing
         }

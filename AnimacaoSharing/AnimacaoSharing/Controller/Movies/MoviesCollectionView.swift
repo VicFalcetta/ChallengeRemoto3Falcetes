@@ -19,8 +19,10 @@ extension MoviesViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
-                "BestMoviesCollectionCell", for: indexPath) as! BestMoviesCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
+            "BestMoviesCollectionCell", for: indexPath) as? BestMoviesCollectionViewCell else {
+                fatalError("DequeueReusableCell failed while casting")
+        }
         cell.titleMovieLabel.text = arrayOfBestMovies[indexPath.row].title
         cell.posterMovieImagemView.load(imgUrl: "\(arrayOfBestMovies[indexPath.row].poster)")
         return cell
