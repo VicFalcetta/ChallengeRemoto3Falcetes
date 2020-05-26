@@ -31,6 +31,7 @@ class AddViewController: UIViewController {
 //                let nome = record?.value(forKey: "Name")
 //            }
 //        }
+        
         guard let movie = movie else { return }
         guard let userRating = noteAnimationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         let newAnimation: Animation = Animation.createAnimation(movie: movie, userRating: userRating)
@@ -39,11 +40,11 @@ class AddViewController: UIViewController {
         } else {
             addDrawingVCDelegate?.addDrawing(newAnimation)
         }
-        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func cancelAnimationBarButtonItem(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.dismiss(animated: true, completion: nil)
     }
 
     @IBOutlet weak var addAnimationSearchBar: UISearchBar!

@@ -398,7 +398,7 @@
         <!--Detalhes-->
         <scene sceneID="sF5-DU-c60">
             <objects>
-                <viewController title="Detalhes" id="AOm-xO-1q0" customClass="DetailsViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detalheVC" title="Detalhes" id="AOm-xO-1q0" customClass="DetailsViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FMC-6X-JUt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="473"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -412,7 +412,7 @@
                                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZk-Ri-sFD">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                                 <items>
-                                                    <navigationItem title="Detalhes" id="pcu-85-s15">
+                                                    <navigationItem title="Animation Details" id="pcu-85-s15">
                                                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="sYJ-Iy-15u">
                                                             <connections>
                                                                 <action selector="shereAnimationUIButtonItem:" destination="AOm-xO-1q0" id="AzQ-Ug-kwb"/>
@@ -428,44 +428,44 @@
                                                     <constraint firstAttribute="width" secondItem="br5-Vh-eFS" secondAttribute="height" multiplier="5:6" id="vDh-vd-RvY"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome animação" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGj-NN-F7p">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome animação" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGj-NN-F7p">
                                                 <rect key="frame" x="16" y="230" width="382" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="JHw-g2-qDt">
-                                                <rect key="frame" x="89.5" y="275.5" width="235" height="16"/>
+                                                <rect key="frame" x="90.5" y="275.5" width="233.5" height="16"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Produtora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-PQ-yuZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-PQ-yuZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.5" height="16"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lançamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmR-ax-rYm">
-                                                        <rect key="frame" x="160.5" y="0.0" width="74.5" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmR-ax-rYm">
+                                                        <rect key="frame" x="155.5" y="0.0" width="78" height="16"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpD-fI-Gwa">
-                                                <rect key="frame" x="91.5" y="299.5" width="56.5" height="37.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpD-fI-Gwa">
+                                                <rect key="frame" x="106.5" y="299.5" width="23" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-Mu-ynj">
-                                                <rect key="frame" x="249.5" y="299.5" width="75.5" height="37.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-Mu-ynj">
+                                                <rect key="frame" x="262" y="299.5" width="45.5" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gênero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtm-OQ-M2T">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtm-OQ-M2T">
                                                 <rect key="frame" x="16" y="353" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
@@ -507,7 +507,7 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHJ-IG-CF1">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHJ-IG-CF1">
                                                 <rect key="frame" x="16" y="449" width="382" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                 <nil key="textColor"/>
@@ -619,7 +619,7 @@
             </objects>
             <point key="canvasLocation" x="2451" y="151"/>
         </scene>
-        <!--Filmes-->
+        <!--Movies-->
         <scene sceneID="ExB-HO-hXz">
             <objects>
                 <viewController id="sgr-4L-4cN" customClass="MoviesViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
@@ -637,13 +637,13 @@
                                                 <rect key="frame" x="0.0" y="16" width="414" height="56"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melhores avalidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-WZ-afS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best rated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-WZ-afS">
                                                 <rect key="frame" x="16" y="88" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galeria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEu-BP-5mu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEu-BP-5mu">
                                                 <rect key="frame" x="16" y="317" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
@@ -769,7 +769,6 @@
                                                             <outlet property="posterMovieImagemView" destination="gke-vh-AcM" id="3DW-JF-6sQ"/>
                                                             <outlet property="subtitleMovieLabel" destination="CvQ-x1-VOG" id="tWp-9f-H2i"/>
                                                             <outlet property="titleMovieLabel" destination="1WF-i4-Zkd" id="f9G-tI-dxV"/>
-                                                            <segue destination="AOm-xO-1q0" kind="showDetail" id="w7L-eT-sER"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
@@ -817,7 +816,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hl6-fo-2mT"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Filmes" id="NRJ-1A-jCQ">
+                    <navigationItem key="navigationItem" title="Movies" id="NRJ-1A-jCQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wxp-I3-RdV">
                             <connections>
                                 <segue destination="kgJ-5g-9up" kind="showDetail" id="qgi-V9-mC3"/>
@@ -852,7 +851,7 @@
                                             <navigationBar contentMode="scaleToFill" verticalHuggingPriority="253" translatesAutoresizingMaskIntoConstraints="NO" id="p5Q-MR-dz0">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                                 <items>
-                                                    <navigationItem title="Adicionar" id="i5F-ZV-SWZ">
+                                                    <navigationItem title="Add" id="i5F-ZV-SWZ">
                                                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="HV5-N6-CJ1">
                                                             <connections>
                                                                 <action selector="saveAnimationBarButtonIten:" destination="kgJ-5g-9up" id="n30-TU-SvD"/>
@@ -878,13 +877,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classificação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1R-BR-Uir">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1R-BR-Uir">
                                                 <rect key="frame" x="16" y="334" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conte-nos, de 0 a 10, o quanto gostou da animação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvA-Xt-uuw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From 0 to 10, how much did you like this animation?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvA-Xt-uuw">
                                                 <rect key="frame" x="16" y="366" width="382" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                 <nil key="textColor"/>
@@ -957,7 +956,7 @@
             </objects>
             <point key="canvasLocation" x="4168" y="497"/>
         </scene>
-        <!--Desenhos-->
+        <!--TV Animations-->
         <scene sceneID="Ldq-J3-j0V">
             <objects>
                 <viewController id="Mxw-rT-f2Q" customClass="DrawingsViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
@@ -975,7 +974,7 @@
                                                 <rect key="frame" x="0.0" y="16" width="414" height="56"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melhores avaliados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-dH-Hqk">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best rated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-dH-Hqk">
                                                 <rect key="frame" x="16" y="88" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
@@ -1048,12 +1047,11 @@
                                                             <outlet property="posterDrawingImagemView" destination="wzQ-1v-wJx" id="4wO-Et-DgH"/>
                                                             <outlet property="subtitleDrawingLabel" destination="0dK-JR-qad" id="otl-XT-BFy"/>
                                                             <outlet property="titleDrawingLabel" destination="vpk-Lf-co9" id="ZPJ-yK-L0z"/>
-                                                            <segue destination="AOm-xO-1q0" kind="showDetail" id="MZK-6d-ftZ"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galeria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4I-hE-xav">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4I-hE-xav">
                                                 <rect key="frame" x="16" y="317" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
@@ -1155,7 +1153,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ct6-nx-N7Z"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Desenhos" id="PGL-mC-f4N">
+                    <navigationItem key="navigationItem" title="TV Animations" id="PGL-mC-f4N">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MZ3-NO-XLw">
                             <connections>
                                 <segue destination="kgJ-5g-9up" kind="showDetail" id="62y-Ak-E47"/>
@@ -1923,7 +1921,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="0Lp-ww-VFs"/>
         <segue reference="62y-Ak-E47"/>
-        <segue reference="MZK-6d-ftZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.078431372549019607" green="1" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
     <resources>

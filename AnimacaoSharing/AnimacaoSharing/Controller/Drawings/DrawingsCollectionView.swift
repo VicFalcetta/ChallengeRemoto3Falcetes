@@ -26,4 +26,13 @@ extension DrawingsViewController: UICollectionViewDataSource {
         cell.posterDrawingImagemView.load(imgUrl: "\(arrayOfBestDrawings[indexPath.row].poster)")
         return cell
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailAnimationVC = storyboard?.instantiateViewController(withIdentifier: "detalheVC") as? DetailsViewController
+        detailAnimationVC?.poster = arrayOfGalleryDrawings[indexPath.row].poster
+        detailAnimationVC?.name = arrayOfGalleryDrawings[indexPath.row].title
+        detailAnimationVC?.plotDescription = arrayOfGalleryDrawings[indexPath.row].plot
+        detailAnimationVC?.launchDate = arrayOfGalleryDrawings[indexPath.row].year
+        guard let detailVC = detailAnimationVC else { return }
+        self.navigationController?.showDetailViewController(detailVC, sender: self)
+    }
 }
