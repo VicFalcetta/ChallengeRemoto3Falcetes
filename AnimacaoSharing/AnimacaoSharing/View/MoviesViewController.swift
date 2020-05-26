@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol MoviesVCDelegate: AnyObject {
-    func addMovie (_ movie: Animation)
-}
-
 class MoviesViewController: UIViewController {
 
     @IBOutlet weak var moviesSearchBar: UISearchBar!
@@ -41,12 +37,5 @@ class MoviesViewController: UIViewController {
             addMovieVC.addMovieVCDelegate = self
             addMovieVC.isMovie = true
         }
-    }
-}
-
-extension MoviesViewController: MoviesVCDelegate {
-    func addMovie(_ movie: Animation) {
-        self.arrayOfGalleryMovies.append(movie)
-        self.galleryMoviesTableView.reloadData()
     }
 }
