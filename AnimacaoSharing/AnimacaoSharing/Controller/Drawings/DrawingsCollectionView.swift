@@ -18,8 +18,10 @@ extension DrawingsViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
-                "BestDrawingsCollectionCell", for: indexPath) as! BestDrawingsCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
+                "BestDrawingsCollectionCell", for: indexPath) as? BestDrawingsCollectionViewCell else {
+                        fatalError("DequeueReusableCell failed while casting")
+                }
         cell.titleDrawingLabel.text = arrayOfBestDrawings[indexPath.row].title
         cell.posterDrawingImagemView.load(imgUrl: "\(arrayOfBestDrawings[indexPath.row].poster)")
         return cell

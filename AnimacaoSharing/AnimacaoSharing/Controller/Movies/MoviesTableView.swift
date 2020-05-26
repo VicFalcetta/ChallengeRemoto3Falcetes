@@ -19,7 +19,10 @@ extension MoviesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GalleryMovieTableViewCell", for: indexPath) as! GalleryMovieTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier:
+            "GalleryMovieTableViewCell", for: indexPath) as? GalleryMovieTableViewCell else {
+                fatalError("DequeueReusableCell failed while casting")
+        }
         cell.nameMovieLabel.text = arrayOfGalleryMovies[indexPath.row].title
         cell.noteMovieLabel.text = "\(arrayOfGalleryMovies[indexPath.row].userRating)/10"
         cell.posterMovieImageView.load(imgUrl: arrayOfGalleryMovies[indexPath.row].poster)

@@ -23,11 +23,13 @@
 		E023F97724770B6F008B4D5F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023F97624770B6F008B4D5F /* ProfileViewController.swift */; };
 		E055BE25247757EA00E7F6B0 /* WatchedMoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E055BE24247757EA00E7F6B0 /* WatchedMoviesCollectionViewCell.swift */; };
 		E055BE272477580000E7F6B0 /* WatchedDrawingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E055BE262477580000E7F6B0 /* WatchedDrawingCollectionViewCell.swift */; };
+		E0607CE2247C9F3200B36DF5 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0607CE1247C9F3200B36DF5 /* EditProfileViewController.swift */; };
 		E06BFE5F247712E000813E5B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BFE5E247712E000813E5B /* AddViewController.swift */; };
 		E06BFE612477135800813E5B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BFE602477135800813E5B /* DetailsViewController.swift */; };
 		E06BFE63247713C600813E5B /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06BFE62247713C600813E5B /* CompanyViewController.swift */; };
 		E07C6F642478987A002A7BBB /* GalleryMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C6F632478987A002A7BBB /* GalleryMovieTableViewCell.swift */; };
 		E07C6F6A24789F7F002A7BBB /* GalleryDrawingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07C6F6924789F7F002A7BBB /* GalleryDrawingsTableViewCell.swift */; };
+		E0997C30247CB32E003F4556 /* MoviesVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0997C2F247CB32E003F4556 /* MoviesVCDelegate.swift */; };
 		E0ABE2572477304000655908 /* MoviesSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2562477304000655908 /* MoviesSearchBar.swift */; };
 		E0ABE2592477311600655908 /* MoviesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE2582477311600655908 /* MoviesTableView.swift */; };
 		E0ABE25B247731EC00655908 /* MoviesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ABE25A247731EC00655908 /* MoviesCollectionView.swift */; };
@@ -62,11 +64,13 @@
 		E023F97624770B6F008B4D5F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E055BE24247757EA00E7F6B0 /* WatchedMoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedMoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		E055BE262477580000E7F6B0 /* WatchedDrawingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedDrawingCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0607CE1247C9F3200B36DF5 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		E06BFE5E247712E000813E5B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		E06BFE602477135800813E5B /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E06BFE62247713C600813E5B /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		E07C6F632478987A002A7BBB /* GalleryMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryMovieTableViewCell.swift; sourceTree = "<group>"; };
 		E07C6F6924789F7F002A7BBB /* GalleryDrawingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDrawingsTableViewCell.swift; sourceTree = "<group>"; };
+		E0997C2F247CB32E003F4556 /* MoviesVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVCDelegate.swift; sourceTree = "<group>"; };
 		E0ABE2562477304000655908 /* MoviesSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesSearchBar.swift; sourceTree = "<group>"; };
 		E0ABE2582477311600655908 /* MoviesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableView.swift; sourceTree = "<group>"; };
 		E0ABE25A247731EC00655908 /* MoviesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionView.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				E06BFE5E247712E000813E5B /* AddViewController.swift */,
 				E06BFE602477135800813E5B /* DetailsViewController.swift */,
 				E06BFE62247713C600813E5B /* CompanyViewController.swift */,
+				E0607CE1247C9F3200B36DF5 /* EditProfileViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 		E0ABE25C247731FB00655908 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				E0997C2F247CB32E003F4556 /* MoviesVCDelegate.swift */,
 				E0ABE2562477304000655908 /* MoviesSearchBar.swift */,
 				E0ABE2582477311600655908 /* MoviesTableView.swift */,
 				E0ABE25A247731EC00655908 /* MoviesCollectionView.swift */,
@@ -349,8 +355,10 @@
 				E0ABE25E2477341900655908 /* DrawingsSearchBar.swift in Sources */,
 				E0ABE25B247731EC00655908 /* MoviesCollectionView.swift in Sources */,
 				E06BFE5F247712E000813E5B /* AddViewController.swift in Sources */,
+				E0997C30247CB32E003F4556 /* MoviesVCDelegate.swift in Sources */,
 				E0ABE2602477344A00655908 /* DrawingsTableView.swift in Sources */,
 				E0E2098824776B3800E5327D /* Company.swift in Sources */,
+				E0607CE2247C9F3200B36DF5 /* EditProfileViewController.swift in Sources */,
 				E06BFE612477135800813E5B /* DetailsViewController.swift in Sources */,
 				E0E2098A24776C7000E5327D /* Person.swift in Sources */,
 				22F3EEAE247302A100774A66 /* AnimacaoSharing.xcdatamodeld in Sources */,
