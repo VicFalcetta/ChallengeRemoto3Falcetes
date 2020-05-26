@@ -31,7 +31,7 @@ class AddViewController: UIViewController {
 //                let nome = record?.value(forKey: "Name")
 //            }
 //        }
-    
+
         guard let movie = movie else { return }
         guard let userRating = noteAnimationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         let newAnimation: Animation = Animation.createAnimation(movie: movie, userRating: userRating)

@@ -42,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNT-y5-8Pw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1049"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wR-Y9-Z4L">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="816.5"/>
@@ -1183,7 +1183,6 @@
                     <connections>
                         <segue destination="4ti-jg-JAK" kind="relationship" relationship="viewControllers" id="Vr7-H5-nom"/>
                         <segue destination="mTz-Ua-BhE" kind="relationship" relationship="viewControllers" id="X7p-MS-QXB"/>
-                        <segue destination="Fxw-nE-UeX" kind="relationship" relationship="viewControllers" id="bn6-e7-0ev"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WwI-gR-Jt4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
