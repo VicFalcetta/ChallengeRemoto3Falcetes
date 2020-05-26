@@ -19,9 +19,16 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var launchAnimationDetailsLabel: UILabel!
     @IBOutlet weak var genreAnimationDetailsCollectionView: UICollectionView!
     @IBOutlet weak var descriptionAnimationDetailsLabel: UILabel!
+    var poster, name, launchDate, plotDescription,
+        genre, producer: String?
 
     override func viewDidLoad() {
-    super.viewDidLoad()
-        overrideUserInterfaceStyle = .dark 
+        super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
+        guard let posterImg = poster else { return }
+        posterAnimationDetailsImageView.load(imgUrl: posterImg)
+        nameAnimationDetailsLabel.text = name
+        launchAnimationDetailsLabel.text = launchDate
+        descriptionAnimationDetailsLabel.text = plotDescription
     }
 }

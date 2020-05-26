@@ -25,4 +25,14 @@ extension MoviesViewController: UICollectionViewDataSource {
         cell.posterMovieImagemView.load(imgUrl: "\(arrayOfBestMovies[indexPath.row].poster)")
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailAnimationVC = storyboard?.instantiateViewController(withIdentifier: "detalheVC") as? DetailsViewController
+        detailAnimationVC?.poster = arrayOfGalleryMovies[indexPath.row].poster
+        detailAnimationVC?.name = arrayOfGalleryMovies[indexPath.row].title
+        detailAnimationVC?.plotDescription = arrayOfGalleryMovies[indexPath.row].plot
+        detailAnimationVC?.launchDate = arrayOfGalleryMovies[indexPath.row].year
+        guard let detailVC = detailAnimationVC else { return }
+        self.navigationController?.showDetailViewController(detailVC, sender: self)
+    }
 }

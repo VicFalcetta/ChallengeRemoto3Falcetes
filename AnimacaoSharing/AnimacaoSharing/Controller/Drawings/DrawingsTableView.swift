@@ -23,4 +23,13 @@ extension DrawingsViewController: UITableViewDataSource {
         cell.posterDrawingsImageView.load(imgUrl: arrayOfGalleryDrawings[indexPath.row].poster)
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailAnimationVC = storyboard?.instantiateViewController(withIdentifier: "detalheVC") as? DetailsViewController
+        detailAnimationVC?.poster = arrayOfGalleryDrawings[indexPath.row].poster
+        detailAnimationVC?.name = arrayOfGalleryDrawings[indexPath.row].title
+        detailAnimationVC?.plotDescription = arrayOfGalleryDrawings[indexPath.row].plot
+        detailAnimationVC?.launchDate = arrayOfGalleryDrawings[indexPath.row].year
+        guard let detailVC = detailAnimationVC else { return }
+        self.navigationController?.showDetailViewController(detailVC, sender: self)
+    }
 }
