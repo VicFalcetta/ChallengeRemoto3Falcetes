@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CloudKit
 
 struct Animation {
     let title, year, plot, rating, userRating, poster: String
@@ -19,8 +20,28 @@ struct Animation {
         self.userRating = userRating
         self.poster = poster
     }
+
     static func createAnimation (movie: MovieAPI, userRating: String) -> Animation {
+        let container = CKContainer.init(identifier: "iCloud.ChallengeFalcetes")
+        let dataBase = container.privateCloudDatabase
+
         let newAnimation = Animation(movie.title, movie.year, movie.plot, movie.imdbRating, userRating, movie.poster)
+
+        let animation = CKRecord(recordType: "Animation")
+
+        animation.setValue(newAnimation.title, forKey: "Name")
+        animation.setValue(newAnimation.userRating, forKey: "Note")
+        animation.setValue(newAnimation.plot, forKey: "Plot")
+        animation.setValue(newAnimation.year, forKey: "Year")
+        animation.setValue(newAnimation.poster, forKey: "Poster")
+
+        dataBase.save(animation) { (_, error) in
+            if let erro = error {
+                fatalError(erro.localizedDescription)
+            } else {
+                print("sucesso")
+            }
+        }
         return newAnimation
     }
 }
