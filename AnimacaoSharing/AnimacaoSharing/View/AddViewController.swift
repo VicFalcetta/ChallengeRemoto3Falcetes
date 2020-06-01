@@ -19,19 +19,6 @@ class AddViewController: UIViewController {
 
     @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
 
-//        let animation = CKRecord(recordType: "Animation")
-//
-//        animation.setValue(addAnimationSearchBar.text, forKey: "Name")
-//        animation.setValue(noteAnimationTextField.text, forKey: "Note")
-//
-//        dataBase.save(animation) { (record, error) in
-//            if let erro = error {
-//                fatalError(erro.localizedDescription)
-//            } else {
-//                let nome = record?.value(forKey: "Name")
-//            }
-//        }
-
         guard let movie = movie else { return }
         guard let userRating = noteAnimationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         let newAnimation: Animation = Animation.createAnimation(movie: movie, userRating: userRating)
