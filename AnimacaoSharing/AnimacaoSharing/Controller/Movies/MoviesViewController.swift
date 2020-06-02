@@ -31,6 +31,7 @@ class MoviesViewController: UIViewController {
         bestMoviesCollectionView.dataSource = self
         galleryMoviesTableView.dataSource = self
         galleryMoviesTableView.delegate = self
+        Animation.queryAnimation()
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()

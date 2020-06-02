@@ -17,7 +17,8 @@ struct MovieAPI: Codable {
         plot,
         year,
         imdbRating,
-        poster: String
+        poster,
+        type: String
 
     enum CodingKeys: String, CodingKey {
         case title = "Title"
@@ -27,6 +28,7 @@ struct MovieAPI: Codable {
         case released = "Released"
         case director = "Director"
         case poster = "Poster"
+        case type = "Type"
         case imdbRating, imdbID
     }
 }

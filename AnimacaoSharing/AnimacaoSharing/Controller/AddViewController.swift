@@ -7,12 +7,9 @@
 //
 
 import UIKit
-import CloudKit
 
 class AddViewController: UIViewController {
 
-    let container = CKContainer.init(identifier: "iCloud.ChallengeFalcetes")
-    lazy var dataBase = container.privateCloudDatabase
     weak var addMovieVCDelegate: MoviesVCDelegate?
     weak var addDrawingVCDelegate: DrawingsVCDelegate?
     var isMovie: Bool = false

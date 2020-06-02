@@ -15,7 +15,7 @@ extension MoviesViewController: UICollectionViewDelegate {
 extension MoviesViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrayOfBestMovies.count
+        return Animation.animations.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -23,17 +23,17 @@ extension MoviesViewController: UICollectionViewDataSource {
             "BestMoviesCollectionCell", for: indexPath) as? BestMoviesCollectionViewCell else {
                 fatalError("DequeueReusableCell failed while casting")
         }
-        cell.titleMovieLabel.text = arrayOfBestMovies[indexPath.row].title
-        cell.posterMovieImagemView.load(imgUrl: "\(arrayOfBestMovies[indexPath.row].poster)")
+        cell.titleMovieLabel.text = Animation.animations[indexPath.row].value(forKey: "Name") as? String
+        cell.posterMovieImagemView.load(imgUrl: Animation.animations[indexPath.row].value(forKey: "Poster") as! String)
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailAnimationVC = storyboard?.instantiateViewController(withIdentifier: "detalheVC") as? DetailsViewController
-        detailAnimationVC?.poster = arrayOfGalleryMovies[indexPath.row].poster
-        detailAnimationVC?.name = arrayOfGalleryMovies[indexPath.row].title
-        detailAnimationVC?.plotDescription = arrayOfGalleryMovies[indexPath.row].plot
-        detailAnimationVC?.launchDate = arrayOfGalleryMovies[indexPath.row].year
+        detailAnimationVC?.poster = Animation.animations[indexPath.row].value(forKey: "Poster") as? String
+        detailAnimationVC?.name = Animation.animations[indexPath.row].value(forKey: "Name") as? String
+        detailAnimationVC?.plotDescription = Animation.animations[indexPath.row].value(forKey: "Plot") as? String
+        detailAnimationVC?.launchDate = Animation.animations[indexPath.row].value(forKey: "Year") as? String
         guard let detailVC = detailAnimationVC else { return }
         self.navigationController?.showDetailViewController(detailVC, sender: self)
     }
