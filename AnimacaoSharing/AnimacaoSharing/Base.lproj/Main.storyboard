@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="apT-fP-CLy">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -579,11 +579,11 @@
             </objects>
             <point key="canvasLocation" x="4986" y="497"/>
         </scene>
-        <!--Desenhos-->
+        <!--TV Animations-->
         <scene sceneID="Oth-f1-d6T">
             <objects>
                 <navigationController id="mTz-Ua-BhE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Desenhos" image="tv" catalog="system" id="7KL-Vo-Trd"/>
+                    <tabBarItem key="tabBarItem" title="TV Animations" image="tv" catalog="system" id="7KL-Vo-Trd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="MZg-kw-P9a">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -599,11 +599,64 @@
             </objects>
             <point key="canvasLocation" x="2451" y="853"/>
         </scene>
-        <!--Filmes-->
+        <!--Onboarding View Controller-->
+        <scene sceneID="Tay-e5-qr4">
+            <objects>
+                <viewController storyboardIdentifier="onboarding" id="Nij-37-sxK" customClass="OnboardingViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ry4-YT-ku4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTL-Tn-ThO">
+                                <rect key="frame" x="32" y="790" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2qR-km-nAS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonGetStarted:" destination="Nij-37-sxK" eventType="touchUpInside" id="1fC-B4-sfP"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ite-7x-c0d">
+                                <rect key="frame" x="187" y="745" width="40" height="37"/>
+                                <connections>
+                                    <action selector="pageChanged:" destination="Nij-37-sxK" eventType="valueChanged" id="nSv-5i-b8c"/>
+                                </connections>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8we-c8-nM3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="685"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uTL-Tn-ThO" firstAttribute="leading" secondItem="RCX-rj-yua" secondAttribute="leading" constant="32" id="1da-61-z66"/>
+                            <constraint firstItem="RCX-rj-yua" firstAttribute="bottom" secondItem="uTL-Tn-ThO" secondAttribute="bottom" constant="32" id="NVY-gV-xJC"/>
+                            <constraint firstItem="uTL-Tn-ThO" firstAttribute="top" secondItem="Ite-7x-c0d" secondAttribute="bottom" constant="8" id="PRR-sC-AuT"/>
+                            <constraint firstItem="8we-c8-nM3" firstAttribute="centerX" secondItem="Ite-7x-c0d" secondAttribute="centerX" id="Szd-RW-76y"/>
+                            <constraint firstItem="RCX-rj-yua" firstAttribute="trailing" secondItem="8we-c8-nM3" secondAttribute="trailing" id="VwX-I9-hLp"/>
+                            <constraint firstItem="RCX-rj-yua" firstAttribute="trailing" secondItem="uTL-Tn-ThO" secondAttribute="trailing" constant="32" id="aOA-se-5Cc"/>
+                            <constraint firstItem="Ite-7x-c0d" firstAttribute="top" secondItem="8we-c8-nM3" secondAttribute="bottom" constant="16" id="dDZ-c6-TRF"/>
+                            <constraint firstItem="8we-c8-nM3" firstAttribute="leading" secondItem="RCX-rj-yua" secondAttribute="leading" id="hx6-oF-XIh"/>
+                            <constraint firstItem="RCX-rj-yua" firstAttribute="trailing" secondItem="Ite-7x-c0d" secondAttribute="trailing" constant="187" id="hzf-nE-CpP"/>
+                            <constraint firstItem="8we-c8-nM3" firstAttribute="top" secondItem="RCX-rj-yua" secondAttribute="top" id="vdg-27-LP3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RCX-rj-yua"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOnboarding" destination="uTL-Tn-ThO" id="Xgq-N3-DyC"/>
+                        <outlet property="pageControlOnboarding" destination="Ite-7x-c0d" id="ynw-8D-w7Y"/>
+                        <outlet property="scrollOnboarding" destination="8we-c8-nM3" id="1jR-Fj-P6s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4O-Z5-69b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2451" y="-579"/>
+        </scene>
+        <!--Movies-->
         <scene sceneID="kgx-ax-Cg0">
             <objects>
                 <navigationController id="4ti-jg-JAK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Filmes" image="movie" id="jRU-Kj-iyy"/>
+                    <tabBarItem key="tabBarItem" title="Movies" image="movie" id="jRU-Kj-iyy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="DMq-nQ-VHg">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1919,7 +1972,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="0Lp-ww-VFs"/>
-        <segue reference="62y-Ak-E47"/>
+        <segue reference="qgi-V9-mC3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.078431372549019607" green="1" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
