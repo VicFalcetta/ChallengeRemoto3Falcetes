@@ -32,6 +32,14 @@ class MoviesViewController: UIViewController {
         galleryMoviesTableView.dataSource = self
         galleryMoviesTableView.delegate = self
     }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if Onboarding.shared.isNewUser() {
+            let onboardingVC = storyboard?.instantiateViewController(withIdentifier: "onboarding") as! OnboardingViewController
+            onboardingVC.modalPresentationStyle = .fullScreen
+            present(onboardingVC, animated: true)
+        }
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addMovieVC = segue.destination as? AddViewController {
             addMovieVC.addMovieVCDelegate = self

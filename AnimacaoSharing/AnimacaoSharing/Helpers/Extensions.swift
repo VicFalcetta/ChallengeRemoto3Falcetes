@@ -1,7 +1,3 @@
-//
-//  Extensions.swift
-//  Pipopcorn
-//
 //  Created by Paul Hudson and modified by Lucas Fernandez Nicolau.
 // https://www.hackingwithswift.com/example-code/uikit/how-to-load-a-remote-image-url-into-uiimageview
 //
