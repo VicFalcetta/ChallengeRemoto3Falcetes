@@ -15,7 +15,7 @@ extension MoviesViewController: UITableViewDelegate {
 extension MoviesViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayOfGalleryMovies.count
+        return Animation.animations.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -23,18 +23,18 @@ extension MoviesViewController: UITableViewDataSource {
             "GalleryMovieTableViewCell", for: indexPath) as? GalleryMovieTableViewCell else {
                 fatalError("DequeueReusableCell failed while casting")
         }
-        cell.nameMovieLabel.text = arrayOfGalleryMovies[indexPath.row].title
-        cell.noteMovieLabel.text = "\(arrayOfGalleryMovies[indexPath.row].userRating)/10"
-        cell.posterMovieImageView.load(imgUrl: arrayOfGalleryMovies[indexPath.row].poster)
+        cell.nameMovieLabel.text = Animation.animations[indexPath.row].value(forKey: "Name") as? String
+        cell.noteMovieLabel.text = "\(String(describing: Animation.animations[indexPath.row].value(forKey: "Note") as? String))/10"
+        cell.posterMovieImageView.load(imgUrl: Animation.animations[indexPath.row].value(forKey: "Poster") as! String)
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailAnimationVC = storyboard?.instantiateViewController(withIdentifier: "detalheVC") as? DetailsViewController
-        detailAnimationVC?.poster = arrayOfGalleryMovies[indexPath.row].poster
-        detailAnimationVC?.name = arrayOfGalleryMovies[indexPath.row].title
-        detailAnimationVC?.plotDescription = arrayOfGalleryMovies[indexPath.row].plot
-        detailAnimationVC?.launchDate = arrayOfGalleryMovies[indexPath.row].year
+        detailAnimationVC?.poster = Animation.animations[indexPath.row].value(forKey: "Poster") as? String
+        detailAnimationVC?.name = Animation.animations[indexPath.row].value(forKey: "Name") as? String
+        detailAnimationVC?.plotDescription = Animation.animations[indexPath.row].value(forKey: "Plot") as? String
+        detailAnimationVC?.launchDate = Animation.animations[indexPath.row].value(forKey: "Year") as? String
         guard let detailVC = detailAnimationVC else { return }
         self.navigationController?.showDetailViewController(detailVC, sender: self)
     }

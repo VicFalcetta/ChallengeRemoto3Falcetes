@@ -16,14 +16,14 @@ class AddViewController: UIViewController {
 
     @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
 
-        guard let movie = movie else { return }
-        guard let userRating = noteAnimationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
-        let newAnimation: Animation = Animation.createAnimation(movie: movie, userRating: userRating)
-        if isMovie == true {
-            addMovieVCDelegate?.addMovie(newAnimation)
-        } else {
-            addDrawingVCDelegate?.addDrawing(newAnimation)
-        }
+//        guard let movie = movie else { return }
+        guard (noteAnimationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)) != nil else { return }
+//        let newAnimation: Animation = Animation.createAnimation(movie: movie, userRating: userRating)
+//        if isMovie == true {
+//            addMovieVCDelegate?.addMovie(newAnimation)
+//        } else {
+//            addDrawingVCDelegate?.addDrawing(newAnimation)
+//        }
         dismiss(animated: true, completion: nil)
     }
 

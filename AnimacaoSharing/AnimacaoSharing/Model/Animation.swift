@@ -22,9 +22,11 @@ struct Animation {
         self.type = type
     }
 
-    static func createAnimation (movie: MovieAPI, userRating: String) -> Animation {
-        let container = CKContainer.init(identifier: "iCloud.ChallengeFalcetes")
-        let dataBase = container.privateCloudDatabase
+    static var animations = [CKRecord]()
+
+    static var database = CKContainer.default().privateCloudDatabase
+
+    static func createAnimation(movie: MovieAPI, userRating: String) {
 
         let newAnimation = Animation(movie.title, movie.year, movie.plot, movie.imdbRating, userRating, movie.poster, movie.type)
 
@@ -37,13 +39,24 @@ struct Animation {
         animation.setValue(newAnimation.poster, forKey: "Poster")
         animation.setValue(newAnimation.type, forKey: "Type")
 
-        dataBase.save(animation) { (_, error) in
+        database.save(animation) { (_, error) in
             if let erro = error {
                 fatalError(erro.localizedDescription)
             } else {
                 print("sucesso")
             }
         }
-        return newAnimation
+    }
+
+    static func queryAnimation() {
+        let query = CKQuery(recordType: "Animation", predicate: NSPredicate(value: true))
+        Animation.database.perform(query, inZoneWith: CKRecordZone.default().zoneID) { (record, error) in
+            if let erro = error {
+                fatalError(erro.localizedDescription)
+            } else {
+                guard let records = record else { return }
+                Animation.animations = records
+            }
+        }
     }
 }
