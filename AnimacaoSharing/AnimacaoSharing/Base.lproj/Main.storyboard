@@ -608,23 +608,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTL-Tn-ThO">
-                                <rect key="frame" x="32" y="790" width="350" height="40"/>
+                                <rect key="frame" x="32" y="780" width="350" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="2qR-km-nAS"/>
+                                    <constraint firstAttribute="height" constant="50" id="2qR-km-nAS"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonGetStarted:" destination="Nij-37-sxK" eventType="touchUpInside" id="1fC-B4-sfP"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Ite-7x-c0d">
-                                <rect key="frame" x="187" y="745" width="40" height="37"/>
+                                <rect key="frame" x="187" y="735" width="40" height="37"/>
                                 <connections>
                                     <action selector="pageChanged:" destination="Nij-37-sxK" eventType="valueChanged" id="nSv-5i-b8c"/>
                                 </connections>
                             </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8we-c8-nM3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="685"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="675"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

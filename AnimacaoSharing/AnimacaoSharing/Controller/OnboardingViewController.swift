@@ -16,9 +16,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     var scrollWidth: CGFloat = 0.0
     var scrollHeight: CGFloat = 0.0
     //Dados que serão apresentados no Onboarding de tutorial
-    let titles: [String] = ["Add animations to your list!", "See their plot and info!"]
-    let descriptions: [String] = ["With AnimU, you can register an animation to a list of animated movies or animated TV series. Just click on the '+' icon!", "To see more info about the animation that you just added, click on the cell in the table!"]
-    let images: [String] = ["onboarding_1", "onboarding_2"]
+    let titles: [String] = ["Welcome to AnimU", "Add animations to your list!", "See their plot and info!"]
+    let descriptions: [String] = ["AnimU is an app that helps you keep track of which animated movies or series that you have watched.","With AnimU you can register an animation to a list of animated movies or animated TV series. Just touch on the '+' icon!", "To see more info about the animation that you added touch on the cell in the table!"]
+    let images: [String] = ["onboarding_1", "onboarding_2", "onboarding_3"]
     //Pegando de forma dinâmica a largura e altura da scroll
     override func viewDidLayoutSubviews() {
         scrollWidth = scrollOnboarding.frame.size.width
@@ -32,10 +32,14 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         scrollOnboarding.isPagingEnabled = true
         scrollOnboarding.showsVerticalScrollIndicator = false
         scrollOnboarding.showsHorizontalScrollIndicator = false
-        buttonOnboarding.setTitleColor(#colorLiteral(red: 0.1254901961, green: 0.1254901961, blue: 0.1568627451, alpha: 1), for: .normal)
-        buttonOnboarding.backgroundColor = #colorLiteral(red: 0.07843137255, green: 0.8239511986, blue: 0.9254901961, alpha: 1)
+        buttonOnboarding.setTitleColor(#colorLiteral(red: 0.07843137255, green: 1, blue: 0.9254901961, alpha: 1), for: .normal)
+        buttonOnboarding.backgroundColor = .clear
         buttonOnboarding.setTitle("Get Started", for: .normal)
         buttonOnboarding.isHidden = true
+        buttonOnboarding.layer.cornerRadius = 5
+        buttonOnboarding.layer.borderWidth = 3
+        buttonOnboarding.layer.borderColor = #colorLiteral(red: 0.07843137255, green: 1, blue: 0.9254901961, alpha: 1)
+        buttonOnboarding.layer.masksToBounds = true
         //Criar a view que será apresentada
         var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
         for index in 0..<titles.count {
@@ -76,14 +80,12 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         scrollOnboarding!.scrollRectToVisible(CGRect(x: scrollWidth * CGFloat((pageControlOnboarding?.currentPage)!), y: 0, width: scrollWidth, height: scrollHeight), animated: true)
     }
     @IBAction func buttonGetStarted(_ sender: UIButton) {
-        if pageControlOnboarding.currentPage == 1 {
-            Onboarding.shared.setIsNotNewUser()
-            dismiss(animated: true, completion: nil)
-        }
+        Onboarding.shared.setIsNotNewUser()
+        dismiss(animated: true, completion: nil)
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         setIndicatorForCurrentPage()
-        if pageControlOnboarding.currentPage == 1 {
+        if pageControlOnboarding.currentPage == 2 {
             buttonOnboarding.isHidden = false
         } else {
             buttonOnboarding.isHidden = true
@@ -93,5 +95,4 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         let page = (scrollOnboarding?.contentOffset.x)! / scrollWidth
         pageControlOnboarding?.currentPage = Int(page)
     }
-    
 }

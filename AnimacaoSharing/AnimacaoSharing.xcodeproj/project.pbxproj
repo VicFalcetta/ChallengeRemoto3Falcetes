@@ -137,10 +137,10 @@
 				E0E2098724776B3800E5327D /* Company.swift */,
 				22AE0511247852340015CCE0 /* MovieAPI.swift */,
 				22AE0513247856550015CCE0 /* Search.swift */,
+				2256F47C2480577C0063A47A /* Onboarding.swift */,
 				E07C6F652478988A002A7BBB /* Movies */,
 				E07C6F662478988F002A7BBB /* Drawings */,
 				E0C16AEF2478970C00B2502E /* Perfil */,
-				2256F47C2480577C0063A47A /* Onboarding.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,8 +189,8 @@
 				22AE051824785AED0015CCE0 /* Helpers */,
 				22AE051524785AB10015CCE0 /* SupportingFiles */,
 				22AE050F247851B60015CCE0 /* Model */,
-				22F3EEA9247302A100774A66 /* Main.storyboard */,
 				22F3EEAF247302A400774A66 /* Assets.xcassets */,
+				22F3EEA9247302A100774A66 /* Main.storyboard */,
 				22F3EEB1247302A400774A66 /* LaunchScreen.storyboard */,
 				22F3EEB4247302A400774A66 /* Info.plist */,
 				22F3EEAC247302A100774A66 /* AnimacaoSharing.xcdatamodeld */,
