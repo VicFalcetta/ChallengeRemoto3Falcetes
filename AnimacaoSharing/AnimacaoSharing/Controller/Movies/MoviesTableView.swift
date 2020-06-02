@@ -24,7 +24,8 @@ extension MoviesViewController: UITableViewDataSource {
                 fatalError("DequeueReusableCell failed while casting")
         }
         cell.nameMovieLabel.text = Animation.animations[indexPath.row].value(forKey: "Name") as? String
-        cell.noteMovieLabel.text = "\(String(describing: Animation.animations[indexPath.row].value(forKey: "Note") as? String))/10"
+        cell.noteMovieLabel.text = "\(Animation.animations[indexPath.row].value(forKey: "Note") as? String ?? "0"))/10"
+
         cell.posterMovieImageView.load(imgUrl: Animation.animations[indexPath.row].value(forKey: "Poster") as! String)
         return cell
     }

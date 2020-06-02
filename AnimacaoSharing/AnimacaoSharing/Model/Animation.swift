@@ -26,7 +26,7 @@ struct Animation {
 
     static var database = CKContainer.default().privateCloudDatabase
 
-    static func createAnimation(movie: MovieAPI, userRating: String) {
+    static func createAnimation(movie: MovieAPI, userRating: String) -> Animation {
 
         let newAnimation = Animation(movie.title, movie.year, movie.plot, movie.imdbRating, userRating, movie.poster, movie.type)
 
@@ -46,11 +46,12 @@ struct Animation {
                 print("sucesso")
             }
         }
+        return newAnimation
     }
 
     static func queryAnimation() {
         let query = CKQuery(recordType: "Animation", predicate: NSPredicate(value: true))
-        Animation.database.perform(query, inZoneWith: CKRecordZone.default().zoneID) { (record, error) in
+        Animation.database.perform(query, inZoneWith: nil) { (record, error) in
             if let erro = error {
                 fatalError(erro.localizedDescription)
             } else {
