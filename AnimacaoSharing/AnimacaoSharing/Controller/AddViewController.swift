@@ -14,6 +14,8 @@ class AddViewController: UIViewController {
     weak var addDrawingVCDelegate: DrawingsVCDelegate?
     var isMovie: Bool = false
 
+    /* Funcao do botao para adicionar a animacao. Se vier da tela de filmes, adicionará na tela de filmes.
+    Se não vier da tela de filmes, irá adicionar uma animacao na tela de series. */
     @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
 
         guard let movie = movie else { return }
@@ -44,32 +46,53 @@ class AddViewController: UIViewController {
         overrideUserInterfaceStyle = .dark
     }
 
+    // Funcao de formatacao de string, nesse caso substituindo os "%20" da query por espacos em branco
     func formatToQueryString(_ string: String) -> String {
         return string.components(separatedBy: " ").joined(separator: "%20")
     }
 
+    // Declaracao da funcao que procurará a animacao. Ela recebe o nome da animacao e depois a procura pelo nome
     func searchAnimation(named name: String) {
-        let queryStr = formatToQueryString(name)
-        let fullURL = "https://www.omdbapi.com/?apikey=\(APIKEY)&t=\(queryStr)"
-        DispatchQueue.main.async {
-            guard let urlRequest = URL(string: fullURL),
-                let data = try? Data(contentsOf: urlRequest) else { return }
-            if let movie = try? JSONDecoder().decode(MovieAPI.self, from: data) {
-                self.movie = movie
-                self.fillAddScreen()
-            } else {
-                print("Erro ao trazer filmes")
+        /* Condicional que checa se o que será pesquisado é um filme ou uma série animada.
+        A diferenca entre as requests é que, além de separar por movie ou series na url, garante que o json retornara que o dado do tipo sera series ou movies dependendo da request.
+        Isso ajuda pois garante objetos Animation tenham o valor da variavel "type" diferentes quando são filmes ou series animadas.
+        */
+        if isMovie == true {
+            let queryStr = formatToQueryString(name)
+            let fullURL = "https://www.omdbapi.com/?apikey=\(APIKEY)&t=\(queryStr)&type=movie"
+            DispatchQueue.main.async {
+                guard let urlRequest = URL(string: fullURL),
+                    let data = try? Data(contentsOf: urlRequest) else { return }
+                if let movie = try? JSONDecoder().decode(MovieAPI.self, from: data) {
+                    self.movie = movie
+                    self.fillAddScreen()
+                } else {
+                    print("Erro ao trazer filmes")
+                }
+            }
+        } else {
+            let queryStr = formatToQueryString(name)
+            let fullURL = "https://www.omdbapi.com/?apikey=\(APIKEY)&t=\(queryStr)&type=series"
+            DispatchQueue.main.async {
+                guard let urlRequest = URL(string: fullURL),
+                    let data = try? Data(contentsOf: urlRequest) else { return }
+                if let movie = try? JSONDecoder().decode(MovieAPI.self, from: data) {
+                    self.movie = movie
+                    self.fillAddScreen()
+                } else {
+                    print("Erro ao trazer filmes")
+                }
             }
         }
     }
-
+    //Funcao que preenche a tela de adicionar com as info do filme
     func fillAddScreen() {
         guard let movie = movie else { return }
         posterAnimationImagemView.load(imgUrl: movie.poster)
         descriptionAnimationLabel.text = movie.plot
     }
 }
-
+//Delegate que faz a search bar funcionar
 extension AddViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         guard let text = searchBar.text,
