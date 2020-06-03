@@ -25,6 +25,7 @@ extension MoviesViewController: UICollectionViewDataSource {
         }
         cell.titleMovieLabel.text = Animation.animations[indexPath.row].value(forKey: "Name") as? String
         cell.posterMovieImagemView.load(imgUrl: Animation.animations[indexPath.row].value(forKey: "Poster") as! String)
+        cell.layer.cornerRadius = 12
         return cell
     }
 

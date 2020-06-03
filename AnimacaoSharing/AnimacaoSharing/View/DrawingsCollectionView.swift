@@ -24,6 +24,7 @@ extension DrawingsViewController: UICollectionViewDataSource {
                 }
         cell.titleDrawingLabel.text = Animation.animations[indexPath.row].value(forKey: "Name") as? String
         cell.posterDrawingImagemView.load(imgUrl: Animation.animations[indexPath.row].value(forKey: "Poster") as! String)
+        cell.layer.cornerRadius = 12
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

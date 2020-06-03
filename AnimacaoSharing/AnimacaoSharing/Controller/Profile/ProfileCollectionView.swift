@@ -35,6 +35,7 @@ extension ProfileViewController: UICollectionViewDataSource {
                     fatalError("DequeueReusableCell failed while casting")
             }
         cellWatchDrawing.titleWatchDrawingLabel.text = arrayOfWatchedDrawing[indexPath.row]
+            cellWatchDrawing.layer.cornerRadius = 12
          return cellWatchDrawing
         }
     }

@@ -24,6 +24,7 @@ extension DrawingsViewController: UITableViewDataSource {
         cell.nameDrawingsLabel.text = Animation.animations[indexPath.row].value(forKey: "Name") as? String
         cell.noteDrawingsLabel.text = "\(Animation.animations[indexPath.row].value(forKey: "Note") as? String ?? "0")/10"
         cell.posterDrawingsImageView.load(imgUrl: Animation.animations[indexPath.row].value(forKey: "Poster") as! String)
+        cell.layer.cornerRadius = 12
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

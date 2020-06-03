@@ -27,6 +27,7 @@ extension MoviesViewController: UITableViewDataSource {
         cell.noteMovieLabel.text = "\(Animation.animations[indexPath.row].value(forKey: "Note") as? String ?? "0")/10"
 
         cell.posterMovieImageView.load(imgUrl: Animation.animations[indexPath.row].value(forKey: "Poster") as! String)
+        cell.layer.cornerRadius = 12
         return cell
     }
 
