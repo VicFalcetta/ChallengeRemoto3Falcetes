@@ -48,16 +48,4 @@ struct Animation {
         }
         return newAnimation
     }
-
-    static func queryAnimation() {
-        let query = CKQuery(recordType: "Animation", predicate: NSPredicate(value: true))
-        Animation.database.perform(query, inZoneWith: nil) { (record, error) in
-            if let erro = error {
-                fatalError(erro.localizedDescription)
-            } else {
-                guard let records = record else { return }
-                Animation.animations = records
-            }
-        }
-    }
 }
