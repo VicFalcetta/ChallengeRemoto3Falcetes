@@ -44,6 +44,9 @@ class AddViewController: UIViewController {
         super.viewDidLoad()
         addAnimationSearchBar.delegate = self
         overrideUserInterfaceStyle = .dark
+        descriptionAnimationLabel.textAlignment = .center
+        descriptionAnimationLabel.text = "Type the name in the search bar as accurate as possible to find you animation! Remember to put your rating before saving!"
+        noteAnimationTextField.isHidden = true
     }
 
     // Funcao de formatacao de string, nesse caso substituindo os "%20" da query por espacos em branco
@@ -89,7 +92,9 @@ class AddViewController: UIViewController {
     func fillAddScreen() {
         guard let movie = movie else { return }
         posterAnimationImagemView.load(imgUrl: movie.poster)
+        descriptionAnimationLabel.textAlignment = .left
         descriptionAnimationLabel.text = movie.plot
+        noteAnimationTextField.isHidden = false
     }
 }
 //Delegate que faz a search bar funcionar
@@ -99,5 +104,6 @@ extension AddViewController: UISearchBarDelegate {
             text.trimmingCharacters(in: .whitespacesAndNewlines) != "" else { return }
         let name = text.trimmingCharacters(in: .whitespacesAndNewlines)
         searchAnimation(named: name)
+        searchBar.resignFirstResponder()
     }
 }
