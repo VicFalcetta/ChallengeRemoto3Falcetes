@@ -10,9 +10,6 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    @IBAction func shereAnimationUIButtonItem(_ sender: Any) {
-    }
-
     @IBOutlet weak var posterAnimationDetailsImageView: UIImageView!
     @IBOutlet weak var nameAnimationDetailsLabel: UILabel!
     @IBOutlet weak var producerAnimationDetailsLabel: UILabel!
@@ -25,10 +22,14 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .dark
+        // Carregando elementos da view
         guard let posterImg = poster else { return }
         posterAnimationDetailsImageView.load(imgUrl: posterImg)
         nameAnimationDetailsLabel.text = name
         launchAnimationDetailsLabel.text = launchDate
         descriptionAnimationDetailsLabel.text = plotDescription
+    }
+    @IBAction func closeDetail(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
 }

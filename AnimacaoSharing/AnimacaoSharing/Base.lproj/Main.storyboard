@@ -407,35 +407,35 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="507"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdv-Qe-ZW6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="507"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="582"/>
                                         <subviews>
                                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZk-Ri-sFD">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                                 <items>
                                                     <navigationItem title="Animation Details" id="pcu-85-s15">
-                                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="sYJ-Iy-15u">
+                                                        <barButtonItem key="leftBarButtonItem" title="Close" id="1WC-pB-x2N">
                                                             <connections>
-                                                                <action selector="shereAnimationUIButtonItem:" destination="AOm-xO-1q0" id="AzQ-Ug-kwb"/>
+                                                                <action selector="closeDetail:" destination="AOm-xO-1q0" id="CU1-9f-T5v"/>
                                                             </connections>
                                                         </barButtonItem>
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add" translatesAutoresizingMaskIntoConstraints="NO" id="br5-Vh-eFS">
-                                                <rect key="frame" x="144.5" y="72" width="125" height="150"/>
+                                                <rect key="frame" x="113.5" y="72" width="187.5" height="225"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="09v-OT-2oA"/>
+                                                    <constraint firstAttribute="height" constant="225" id="09v-OT-2oA"/>
                                                     <constraint firstAttribute="width" secondItem="br5-Vh-eFS" secondAttribute="height" multiplier="5:6" id="vDh-vd-RvY"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome animação" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGj-NN-F7p">
-                                                <rect key="frame" x="16" y="230" width="382" height="37.5"/>
+                                                <rect key="frame" x="16" y="305" width="382" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="JHw-g2-qDt">
-                                                <rect key="frame" x="90.5" y="275.5" width="233.5" height="16"/>
+                                                <rect key="frame" x="90.5" y="350.5" width="233.5" height="16"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-PQ-yuZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="55.5" height="16"/>
@@ -452,27 +452,27 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpD-fI-Gwa">
-                                                <rect key="frame" x="106.5" y="299.5" width="23" height="37.5"/>
+                                                <rect key="frame" x="106.5" y="374.5" width="23" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKt-Mu-ynj">
-                                                <rect key="frame" x="262" y="299.5" width="45.5" height="37.5"/>
+                                                <rect key="frame" x="262" y="374.5" width="45.5" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtm-OQ-M2T">
-                                                <rect key="frame" x="16" y="353" width="382" height="24"/>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtm-OQ-M2T">
+                                                <rect key="frame" x="16" y="428" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WrL-mP-4rk">
-                                                <rect key="frame" x="16" y="393" width="382" height="40"/>
+                                                <rect key="frame" x="16" y="468" width="382" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="tEa-O0-xYC"/>
@@ -508,7 +508,7 @@
                                                 </cells>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHJ-IG-CF1">
-                                                <rect key="frame" x="16" y="449" width="382" height="18"/>
+                                                <rect key="frame" x="16" y="524" width="382" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
