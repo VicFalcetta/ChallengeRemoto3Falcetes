@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class MoviesViewController: UIViewController {
 
@@ -31,7 +32,7 @@ class MoviesViewController: UIViewController {
         bestMoviesCollectionView.dataSource = self
         galleryMoviesTableView.dataSource = self
         galleryMoviesTableView.delegate = self
-        Animation.queryAnimation()
+        queryAnimation()
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -45,6 +46,22 @@ class MoviesViewController: UIViewController {
         if let addMovieVC = segue.destination as? AddViewController {
             addMovieVC.addMovieVCDelegate = self
             addMovieVC.isMovie = true
+        }
+    }
+
+    func queryAnimation() {
+        let query = CKQuery(recordType: "Animation", predicate: NSPredicate(value: true))
+        Animation.database.perform(query, inZoneWith: nil) { (record, error) in
+            if let erro = error {
+                fatalError(erro.localizedDescription)
+            } else {
+                guard let records = record else { return }
+                Animation.animations = records
+                DispatchQueue.main.async {
+                    self.galleryMoviesTableView.reloadData()
+                    self.bestMoviesCollectionView.reloadData()
+                }
+            }
         }
     }
 }
