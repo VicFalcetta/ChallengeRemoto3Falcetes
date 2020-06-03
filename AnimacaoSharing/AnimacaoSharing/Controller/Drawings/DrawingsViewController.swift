@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 protocol DrawingsVCDelegate: AnyObject {
     func addDrawing(_ drawing: Animation)
@@ -33,11 +34,27 @@ class DrawingsViewController: UIViewController {
         bestDrawingsCollectionView.delegate = self
         galleryDrawingTableView.dataSource = self
         galleryDrawingTableView.delegate = self
+        queryDrawing()
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addDrawingVC = segue.destination as? AddViewController {
             addDrawingVC.addDrawingVCDelegate = self
             addDrawingVC.isMovie = false
+        }
+    }
+    func queryDrawing() {
+        let query = CKQuery(recordType: "Drawing", predicate: NSPredicate(value: true))
+        Animation.database.perform(query, inZoneWith: nil) { (record, error) in
+            if let erro = error {
+                fatalError(erro.localizedDescription)
+            } else {
+                guard let records = record else { return }
+                Animation.animations = records
+                DispatchQueue.main.async {
+                    self.galleryDrawingTableView.reloadData()
+                    self.bestDrawingsCollectionView.reloadData()
+                }
+            }
         }
     }
 }
