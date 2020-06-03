@@ -687,24 +687,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ai-vG-2yT">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="GVP-do-1l3">
-                                                <rect key="frame" x="0.0" y="16" width="414" height="56"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </searchBar>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best rated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-WZ-afS">
-                                                <rect key="frame" x="16" y="88" width="382" height="24"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEu-BP-5mu">
-                                                <rect key="frame" x="16" y="317" width="382" height="24"/>
+                                                <rect key="frame" x="16" y="245" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="svR-Ex-H7A">
-                                                <rect key="frame" x="16" y="349" width="382" height="507"/>
+                                                <rect key="frame" x="16" y="277" width="382" height="579"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GalleryMovieTableViewCell" id="BZF-gV-L5H" customClass="GalleryMovieTableViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
@@ -757,7 +753,7 @@
                                                 </prototypes>
                                             </tableView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Agb-6y-lCC">
-                                                <rect key="frame" x="16" y="120" width="382" height="181"/>
+                                                <rect key="frame" x="16" y="48" width="382" height="181"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="181" id="gde-Ul-hPf"/>
@@ -830,8 +826,6 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="GVP-do-1l3" firstAttribute="top" secondItem="5Ai-vG-2yT" secondAttribute="top" constant="16" id="9SZ-Me-XMk"/>
-                                            <constraint firstAttribute="trailing" secondItem="GVP-do-1l3" secondAttribute="trailing" id="APw-rM-Ssh"/>
                                             <constraint firstAttribute="trailing" secondItem="Agb-6y-lCC" secondAttribute="trailing" constant="16" id="FXG-Ca-J6l"/>
                                             <constraint firstAttribute="bottom" secondItem="svR-Ex-H7A" secondAttribute="bottom" constant="40" id="Gg1-e8-eTU"/>
                                             <constraint firstAttribute="trailing" secondItem="wEu-BP-5mu" secondAttribute="trailing" constant="16" id="Ig1-E2-fjG"/>
@@ -839,10 +833,9 @@
                                             <constraint firstItem="aJr-WZ-afS" firstAttribute="leading" secondItem="5Ai-vG-2yT" secondAttribute="leading" constant="16" id="Lfe-ai-hI6"/>
                                             <constraint firstAttribute="trailing" secondItem="svR-Ex-H7A" secondAttribute="trailing" constant="16" id="REd-eR-QIX"/>
                                             <constraint firstItem="wEu-BP-5mu" firstAttribute="leading" secondItem="5Ai-vG-2yT" secondAttribute="leading" constant="16" id="YQy-Dk-p7A"/>
-                                            <constraint firstItem="aJr-WZ-afS" firstAttribute="top" secondItem="GVP-do-1l3" secondAttribute="bottom" constant="16" id="YWz-KH-8xo"/>
                                             <constraint firstItem="svR-Ex-H7A" firstAttribute="leading" secondItem="5Ai-vG-2yT" secondAttribute="leading" constant="16" id="blM-x1-GML"/>
                                             <constraint firstAttribute="trailing" secondItem="aJr-WZ-afS" secondAttribute="trailing" constant="16" id="cCv-2a-hOj"/>
-                                            <constraint firstItem="GVP-do-1l3" firstAttribute="leading" secondItem="5Ai-vG-2yT" secondAttribute="leading" id="qb4-gs-9Ga"/>
+                                            <constraint firstItem="aJr-WZ-afS" firstAttribute="top" secondItem="5Ai-vG-2yT" secondAttribute="top" constant="16" id="eWa-GG-Hy8"/>
                                             <constraint firstItem="Agb-6y-lCC" firstAttribute="top" secondItem="aJr-WZ-afS" secondAttribute="bottom" constant="8" id="ssG-yB-LGK"/>
                                             <constraint firstItem="Agb-6y-lCC" firstAttribute="leading" secondItem="5Ai-vG-2yT" secondAttribute="leading" constant="16" id="zI4-4R-vC7"/>
                                             <constraint firstItem="svR-Ex-H7A" firstAttribute="top" secondItem="wEu-BP-5mu" secondAttribute="bottom" constant="8" id="zP5-iQ-Muu"/>
@@ -881,7 +874,6 @@
                     <connections>
                         <outlet property="bestMoviesCollectionView" destination="Agb-6y-lCC" id="5b6-Q5-FHe"/>
                         <outlet property="galleryMoviesTableView" destination="svR-Ex-H7A" id="P9U-pS-DYM"/>
-                        <outlet property="moviesSearchBar" destination="GVP-do-1l3" id="UHD-9C-jgE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEB-Sf-DyZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1024,18 +1016,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7s-E4-KOs">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
-                                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="nzG-dv-veU">
-                                                <rect key="frame" x="0.0" y="16" width="414" height="56"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </searchBar>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best rated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-dH-Hqk">
-                                                <rect key="frame" x="16" y="88" width="382" height="24"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LGv-UU-Ojg">
-                                                <rect key="frame" x="16" y="120" width="382" height="181"/>
+                                                <rect key="frame" x="16" y="48" width="382" height="181"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="181" id="WUH-8z-aNf"/>
@@ -1106,13 +1094,13 @@
                                                 </cells>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4I-hE-xav">
-                                                <rect key="frame" x="16" y="317" width="382" height="24"/>
+                                                <rect key="frame" x="16" y="245" width="382" height="24"/>
                                                 <fontDescription key="fontDescription" name="TwCenMT-Regular" family="Tw Cen MT" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ecZ-8w-Zk7">
-                                                <rect key="frame" x="16" y="349" width="382" height="507"/>
+                                                <rect key="frame" x="16" y="277" width="382" height="579"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GalleryDrawingsTableViewCell" id="60b-B3-ewC" customClass="GalleryDrawingsTableViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
@@ -1171,10 +1159,7 @@
                                             <constraint firstItem="d4I-hE-xav" firstAttribute="leading" secondItem="l7s-E4-KOs" secondAttribute="leading" constant="16" id="6EE-W0-4XD"/>
                                             <constraint firstItem="ecZ-8w-Zk7" firstAttribute="leading" secondItem="l7s-E4-KOs" secondAttribute="leading" constant="16" id="70S-J5-qRc"/>
                                             <constraint firstItem="LGv-UU-Ojg" firstAttribute="leading" secondItem="l7s-E4-KOs" secondAttribute="leading" constant="16" id="Opk-kh-uQA"/>
-                                            <constraint firstAttribute="trailing" secondItem="nzG-dv-veU" secondAttribute="trailing" id="QgU-zY-QhB"/>
                                             <constraint firstItem="hU9-dH-Hqk" firstAttribute="leading" secondItem="l7s-E4-KOs" secondAttribute="leading" constant="16" id="T7A-tz-iu9"/>
-                                            <constraint firstItem="nzG-dv-veU" firstAttribute="leading" secondItem="l7s-E4-KOs" secondAttribute="leading" id="X3n-pq-Ms3"/>
-                                            <constraint firstItem="hU9-dH-Hqk" firstAttribute="top" secondItem="nzG-dv-veU" secondAttribute="bottom" constant="16" id="edi-gC-3OE"/>
                                             <constraint firstItem="ecZ-8w-Zk7" firstAttribute="top" secondItem="d4I-hE-xav" secondAttribute="bottom" constant="8" id="f66-Am-3Jn"/>
                                             <constraint firstAttribute="trailing" secondItem="d4I-hE-xav" secondAttribute="trailing" constant="16" id="hYv-bA-2na"/>
                                             <constraint firstItem="d4I-hE-xav" firstAttribute="top" secondItem="LGv-UU-Ojg" secondAttribute="bottom" constant="16" id="izY-LN-3jJ"/>
@@ -1182,7 +1167,7 @@
                                             <constraint firstAttribute="bottom" secondItem="ecZ-8w-Zk7" secondAttribute="bottom" constant="40" id="p2b-Bf-BdR"/>
                                             <constraint firstItem="LGv-UU-Ojg" firstAttribute="top" secondItem="hU9-dH-Hqk" secondAttribute="bottom" constant="8" id="ps9-d5-18e"/>
                                             <constraint firstAttribute="trailing" secondItem="ecZ-8w-Zk7" secondAttribute="trailing" constant="16" id="s9q-lG-qiv"/>
-                                            <constraint firstItem="nzG-dv-veU" firstAttribute="top" secondItem="l7s-E4-KOs" secondAttribute="top" constant="16" id="tol-s0-zM8"/>
+                                            <constraint firstItem="hU9-dH-Hqk" firstAttribute="top" secondItem="l7s-E4-KOs" secondAttribute="top" constant="16" id="yCT-c5-n4M"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1217,7 +1202,6 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="bestDrawingsCollectionView" destination="LGv-UU-Ojg" id="EAm-7m-46i"/>
-                        <outlet property="drawingSearchBar" destination="nzG-dv-veU" id="vaH-eb-Vci"/>
                         <outlet property="galleryDrawingTableView" destination="ecZ-8w-Zk7" id="2Ec-Ps-0zA"/>
                     </connections>
                 </viewController>
