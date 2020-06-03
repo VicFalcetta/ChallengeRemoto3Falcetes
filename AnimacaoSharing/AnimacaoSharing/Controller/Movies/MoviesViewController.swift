@@ -32,7 +32,7 @@ class MoviesViewController: UIViewController {
         bestMoviesCollectionView.dataSource = self
         galleryMoviesTableView.dataSource = self
         galleryMoviesTableView.delegate = self
-        queryAnimation()
+//        queryAnimation()
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -49,19 +49,19 @@ class MoviesViewController: UIViewController {
         }
     }
 
-    func queryAnimation() {
-        let query = CKQuery(recordType: "Animation", predicate: NSPredicate(value: true))
-        Animation.database.perform(query, inZoneWith: nil) { (record, error) in
-            if let erro = error {
-                fatalError(erro.localizedDescription)
-            } else {
-                guard let records = record else { return }
-                Animation.animations = records
-                DispatchQueue.main.async {
-                    self.galleryMoviesTableView.reloadData()
-                    self.bestMoviesCollectionView.reloadData()
-                }
-            }
-        }
-    }
+//    func queryAnimation() {
+//        let query = CKQuery(recordType: "Animation", predicate: NSPredicate(value: true))
+//        Animation.database.perform(query, inZoneWith: nil) { (record, error) in
+//            if let erro = error {
+//                fatalError(erro.localizedDescription)
+//            } else {
+//                guard let records = record else { return }
+//                Animation.animations = records
+//                DispatchQueue.main.async {
+//                    self.galleryMoviesTableView.reloadData()
+//                    self.bestMoviesCollectionView.reloadData()
+//                }
+//            }
+//        }
+//    }
 }
