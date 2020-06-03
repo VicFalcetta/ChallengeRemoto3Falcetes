@@ -30,8 +30,12 @@ struct Animation {
 
         let newAnimation = Animation(movie.title, movie.year, movie.plot, movie.imdbRating, userRating, movie.poster, movie.type)
 
-        let animation = CKRecord(recordType: "Animation")
-
+        var animation: CKRecord
+        if newAnimation.type == "movie" {
+        animation = CKRecord(recordType: "Animation")
+        } else {
+            animation = CKRecord(recordType: "Drawing")
+        }
         animation.setValue(newAnimation.title, forKey: "Name")
         animation.setValue(newAnimation.userRating, forKey: "Note")
         animation.setValue(newAnimation.plot, forKey: "Plot")
