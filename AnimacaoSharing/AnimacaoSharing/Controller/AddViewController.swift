@@ -54,7 +54,7 @@ class AddViewController: UIViewController {
     // Declaracao da funcao que procurará a animacao. Ela recebe o nome da animacao e depois a procura pelo nome
     func searchAnimation(named name: String) {
         /* Condicional que checa se o que será pesquisado é um filme ou uma série animada.
-        A diferenca entre as requests é que, além de separar por movie ou series na url, garante que o json retornara que o dado do tipo sera series ou movies dependendo da request.
+        A diferenca entre as requests, além de separar por movie ou series na url, garante que o json retornara um ou o outro dependendo da request.
         Isso ajuda pois garante objetos Animation tenham o valor da variavel "type" diferentes quando são filmes ou series animadas.
         */
         if isMovie == true {
