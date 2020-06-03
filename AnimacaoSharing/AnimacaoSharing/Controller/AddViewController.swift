@@ -107,3 +107,9 @@ extension AddViewController: UISearchBarDelegate {
         searchBar.resignFirstResponder()
     }
 }
+extension AddViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
