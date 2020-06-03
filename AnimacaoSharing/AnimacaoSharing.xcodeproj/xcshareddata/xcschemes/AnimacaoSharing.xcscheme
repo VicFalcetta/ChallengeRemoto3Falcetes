@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "22F3EE9F247302A100774A66"
-               BuildableName = "AnimationShare.app"
+               BuildableName = "AnimacaoSharing.app"
                BlueprintName = "AnimacaoSharing"
                ReferencedContainer = "container:AnimacaoSharing.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22F3EE9F247302A100774A66"
-            BuildableName = "AnimationShare.app"
+            BuildableName = "AnimacaoSharing.app"
             BlueprintName = "AnimacaoSharing"
             ReferencedContainer = "container:AnimacaoSharing.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22F3EE9F247302A100774A66"
-            BuildableName = "AnimationShare.app"
+            BuildableName = "AnimacaoSharing.app"
             BlueprintName = "AnimacaoSharing"
             ReferencedContainer = "container:AnimacaoSharing.xcodeproj">
          </BuildableReference>
