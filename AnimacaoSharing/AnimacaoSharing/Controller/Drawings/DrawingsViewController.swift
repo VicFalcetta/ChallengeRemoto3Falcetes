@@ -9,14 +9,14 @@
 import UIKit
 import CloudKit
 
-protocol DrawingsVCDelegate: AnyObject {
-    func addDrawing(_ drawing: Animation)
-}
 class DrawingsViewController: UIViewController {
 
     @IBOutlet weak var drawingSearchBar: UISearchBar!
     @IBOutlet weak var bestDrawingsCollectionView: UICollectionView!
     @IBOutlet weak var galleryDrawingTableView: UITableView!
+    @IBAction func refreshPageBarButtonItem(_ sender: Any) {
+        self.queryDrawing()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +47,5 @@ class DrawingsViewController: UIViewController {
                 }
             }
         }
-    }
-}
-extension DrawingsViewController: DrawingsVCDelegate {
-    func addDrawing(_ drawing: Animation) {
-        self.galleryDrawingTableView.reloadData()
-        self.bestDrawingsCollectionView.reloadData()
     }
 }

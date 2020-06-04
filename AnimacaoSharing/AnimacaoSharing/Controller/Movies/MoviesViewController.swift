@@ -15,6 +15,10 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var bestMoviesCollectionView: UICollectionView!
     @IBOutlet weak var galleryMoviesTableView: UITableView!
 
+    @IBAction func refreshPageBarButtonItem(_ sender: Any) {
+        self.queryAnimation()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .dark

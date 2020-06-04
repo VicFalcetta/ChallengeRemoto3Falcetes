@@ -36,7 +36,7 @@
         <!--Perfil-->
         <scene sceneID="rZr-1W-fWv">
             <objects>
-                <viewController id="ZPY-hu-Xah" customClass="ProfileViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZPY-hu-Xah" customClass="ProfileViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z7p-9v-F8d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +155,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedMoviesCollectionCell" id="6UU-fY-mrQ" customClass="WatchedMoviesCollectionViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedMoviesCollectionCell" id="6UU-fY-mrQ" customClass="WatchedMoviesCollectionViewCell" customModule="AnimU" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="3.5" width="125" height="181"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kif-dI-rnQ">
@@ -233,7 +233,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedDrawingsCollectionCell" id="CPO-Ik-cds" customClass="WatchedDrawingCollectionViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AssistedDrawingsCollectionCell" id="CPO-Ik-cds" customClass="WatchedDrawingCollectionViewCell" customModule="AnimU" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="181"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dD6-QX-jqz">
@@ -398,7 +398,7 @@
         <!--Detalhes-->
         <scene sceneID="sF5-DU-c60">
             <objects>
-                <viewController storyboardIdentifier="detalheVC" title="Detalhes" id="AOm-xO-1q0" customClass="DetailsViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detalheVC" title="Detalhes" id="AOm-xO-1q0" customClass="DetailsViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FMC-6X-JUt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="473"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -602,7 +602,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="Tay-e5-qr4">
             <objects>
-                <viewController storyboardIdentifier="onboarding" id="Nij-37-sxK" customClass="OnboardingViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboarding" id="Nij-37-sxK" customClass="OnboardingViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ry4-YT-ku4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -676,7 +676,7 @@
         <!--Movies-->
         <scene sceneID="ExB-HO-hXz">
             <objects>
-                <viewController id="sgr-4L-4cN" customClass="MoviesViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sgr-4L-4cN" customClass="MoviesViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mQp-Af-ePz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -703,7 +703,7 @@
                                                 <rect key="frame" x="16" y="277" width="382" height="579"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GalleryMovieTableViewCell" id="BZF-gV-L5H" customClass="GalleryMovieTableViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GalleryMovieTableViewCell" id="BZF-gV-L5H" customClass="GalleryMovieTableViewCell" customModule="AnimU" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="382" height="52.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BZF-gV-L5H" id="Dfp-BF-7Zk">
@@ -765,7 +765,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="BestMoviesCollectionCell" id="cV7-is-fKZ" customClass="BestMoviesCollectionViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="BestMoviesCollectionCell" id="cV7-is-fKZ" customClass="BestMoviesCollectionViewCell" customModule="AnimU" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="181"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xNv-8Q-HH3">
@@ -864,11 +864,18 @@
                         <viewLayoutGuide key="safeArea" id="Hl6-fo-2mT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="NRJ-1A-jCQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wxp-I3-RdV">
-                            <connections>
-                                <segue destination="kgJ-5g-9up" kind="showDetail" id="qgi-V9-mC3"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="Wxp-I3-RdV">
+                                <connections>
+                                    <segue destination="kgJ-5g-9up" kind="showDetail" id="qgi-V9-mC3"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="SZz-dB-eok">
+                                <connections>
+                                    <action selector="refreshPageBarButtonItem:" destination="sgr-4L-4cN" id="2m7-aE-kTh"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
@@ -883,7 +890,7 @@
         <!--Adicionar-->
         <scene sceneID="HrE-Kz-j5e">
             <objects>
-                <viewController title="Adicionar" id="kgJ-5g-9up" customClass="AddViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Adicionar" id="kgJ-5g-9up" customClass="AddViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WFd-Mg-OWr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="472"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1004,7 +1011,7 @@
         <!--TV Animations-->
         <scene sceneID="Ldq-J3-j0V">
             <objects>
-                <viewController id="Mxw-rT-f2Q" customClass="DrawingsViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Mxw-rT-f2Q" customClass="DrawingsViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="luP-eo-SP2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1034,7 +1041,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="BestDrawingsCollectionCell" id="aJq-BP-o1w" customClass="BestDrawingsCollectionViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="BestDrawingsCollectionCell" id="aJq-BP-o1w" customClass="BestDrawingsCollectionViewCell" customModule="AnimU" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="181"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Lqh-X1-0Uf">
@@ -1102,7 +1109,7 @@
                                                 <rect key="frame" x="16" y="277" width="382" height="579"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GalleryDrawingsTableViewCell" id="60b-B3-ewC" customClass="GalleryDrawingsTableViewCell" customModule="AnimacaoSharing" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GalleryDrawingsTableViewCell" id="60b-B3-ewC" customClass="GalleryDrawingsTableViewCell" customModule="AnimU" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="382" height="52.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="60b-B3-ewC" id="tm9-R2-nh0">
@@ -1192,11 +1199,18 @@
                         <viewLayoutGuide key="safeArea" id="Ct6-nx-N7Z"/>
                     </view>
                     <navigationItem key="navigationItem" title="TV Animations" id="PGL-mC-f4N">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="MZ3-NO-XLw">
-                            <connections>
-                                <segue destination="kgJ-5g-9up" kind="showDetail" id="62y-Ak-E47"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="MZ3-NO-XLw">
+                                <connections>
+                                    <segue destination="kgJ-5g-9up" kind="showDetail" id="62y-Ak-E47"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="refresh" id="yhm-4n-42J">
+                                <connections>
+                                    <action selector="refreshPageBarButtonItem:" destination="Mxw-rT-f2Q" id="rZF-tE-FWb"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
@@ -1229,7 +1243,7 @@
         <!--Detalhes-->
         <scene sceneID="x0s-rK-wMg">
             <objects>
-                <viewController title="Detalhes" id="1Na-fQ-KCj" customClass="CompanyViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detalhes" id="1Na-fQ-KCj" customClass="CompanyViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vRY-uc-hU1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="737"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1491,7 +1505,7 @@
         <!--Editar Perfil-->
         <scene sceneID="J9R-I6-6ZK">
             <objects>
-                <viewController title="Editar Perfil" id="zB1-zx-1Xo" customClass="EditProfileViewController" customModule="AnimacaoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Editar Perfil" id="zB1-zx-1Xo" customClass="EditProfileViewController" customModule="AnimU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nrp-X8-6bB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1956,7 +1970,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="0Lp-ww-VFs"/>
-        <segue reference="62y-Ak-E47"/>
+        <segue reference="qgi-V9-mC3"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.078431372549019607" green="1" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
