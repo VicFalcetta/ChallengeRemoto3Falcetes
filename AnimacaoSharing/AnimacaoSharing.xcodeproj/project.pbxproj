@@ -55,7 +55,7 @@
 		22AE0513247856550015CCE0 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		22AE051624785ABF0015CCE0 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		22D5DFBD24858DC1007AEED9 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		22F3EEA0247302A100774A66 /* AnimationShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = AnimationShare.app; path = AnimacaoSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F3EEA0247302A100774A66 /* AnimU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F3EEA3247302A100774A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F3EEA5247302A100774A66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22F3EEA7247302A100774A66 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		22F3EEA1247302A100774A66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22F3EEA0247302A100774A66 /* AnimationShare.app */,
+				22F3EEA0247302A100774A66 /* AnimU.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 			);
 			name = AnimacaoSharing;
 			productName = AnimacaoSharing;
-			productReference = 22F3EEA0247302A100774A66 /* AnimationShare.app */;
+			productReference = 22F3EEA0247302A100774A66 /* AnimU.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -533,7 +533,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnimacaoSharing/AnimacaoSharing.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = PUT3745C65;
 				INFOPLIST_FILE = AnimacaoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,7 +541,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ChallengeFalcetes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnimU;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -553,7 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AnimacaoSharing/AnimacaoSharing.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = PUT3745C65;
 				INFOPLIST_FILE = AnimacaoSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -561,7 +561,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ChallengeFalcetes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnimU;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
