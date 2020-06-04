@@ -14,7 +14,6 @@ protocol MoviesVCDelegate: AnyObject {
 
 extension MoviesViewController: MoviesVCDelegate {
     func addMovie(_ movie: Animation) {
-        self.arrayOfGalleryMovies.append(movie)
-        self.galleryMoviesTableView.reloadData()
+        self.queryAnimation()
     }
 }

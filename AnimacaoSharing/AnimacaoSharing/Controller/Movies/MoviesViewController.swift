@@ -14,16 +14,6 @@ class MoviesViewController: UIViewController {
     @IBOutlet weak var moviesSearchBar: UISearchBar!
     @IBOutlet weak var bestMoviesCollectionView: UICollectionView!
     @IBOutlet weak var galleryMoviesTableView: UITableView!
-    var arrayOfBestMovies: [Animation] = []
-    var arrayOfGalleryMovies: [Animation] = [] {
-        didSet {
-            arrayOfBestMovies = arrayOfGalleryMovies
-            arrayOfBestMovies.sort {
-                $0.userRating > $1.userRating
-            }
-            bestMoviesCollectionView.reloadData()
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +38,6 @@ class MoviesViewController: UIViewController {
             addMovieVC.isMovie = true
         }
     }
-
     func queryAnimation() {
         let query = CKQuery(recordType: "Animation", predicate: NSPredicate(value: true))
         Animation.database.perform(query, inZoneWith: nil) { (record, error) in

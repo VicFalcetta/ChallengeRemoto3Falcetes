@@ -13,11 +13,9 @@ class AddViewController: UIViewController {
     weak var addMovieVCDelegate: MoviesVCDelegate?
     weak var addDrawingVCDelegate: DrawingsVCDelegate?
     var isMovie: Bool = false
-
     /* Funcao do botao para adicionar a animacao. Se vier da tela de filmes, adicionará na tela de filmes.
     Se não vier da tela de filmes, irá adicionar uma animacao na tela de series. */
     @IBAction func saveAnimationBarButtonIten(_ sender: Any) {
-
         guard let movie = movie else { return }
         guard let userRating = noteAnimationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) else { return }
         let newAnimation: Animation = Animation.createAnimation(movie: movie, userRating: userRating)
